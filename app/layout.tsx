@@ -1,4 +1,4 @@
-import { RootLayoutProps } from "@/types";
+import { RootLayoutProps } from "@/types/props";
 import { Metadata } from "next";
 import "@/styles/globals.css";
 import NavBar from "@/components/layout/NavBar";
@@ -7,9 +7,9 @@ import { bebas, russoOne, inter, outfit, spaceGrotesk } from "./fonts";
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <html 
-      lang="en" 
-      suppressHydrationWarning 
+    <html
+      lang="en"
+      suppressHydrationWarning
       className={`${russoOne.variable} ${bebas.variable} ${spaceGrotesk.variable} ${outfit.variable} ${inter.variable}`}
     >
       <body className={`antialiased font-russo-one`}>
