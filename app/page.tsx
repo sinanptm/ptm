@@ -1,3 +1,4 @@
+
 const page = () => {
   return (
     <main className="container mx-auto p-4">
@@ -37,11 +38,11 @@ const page = () => {
           Our Facilities
         </h2>
         <div className="flex flex-col sm:flex-row gap-4">
-          <img
+          {/* <Image
             src="https://via.placeholder.com/400x300"
             alt="Kalari Training Hub"
             className="rounded-lg shadow-lg"
-          />
+          /> */}
           <p className="text-gray-700 leading-relaxed">
             Our state-of-the-art training hubs provide the perfect environment
             for mastering Kalaripayattu. Equipped with all necessary amenities,

@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '22'
+           cache: 'pnpm'
+           pnpm-version: '9.15.0'
 
       - name: Install pnpm
         run: npm install -g pnpm

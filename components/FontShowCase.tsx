@@ -181,9 +181,9 @@ const FontShowcase = () => {
         </h1>
         <p className="text-gray-600 max-w-3xl mx-auto">
           Explore an expanded variety of fonts that can enhance your fitness
-          application's branding, headers, and motivational content. From bold and
+          application&apos;s branding, headers, and motivational content. From bold and
           energetic to sleek and professional, find the perfect typography for your
-          app's unique style.
+          app&apos;s unique style.
         </p>
       </header>
 
