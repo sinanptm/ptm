@@ -23,7 +23,6 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
-    --font-bebas: var(--font-bebas-neue), 'Impact', 'Arial Narrow', sans-serif;
   }
 }
 
@@ -32,6 +31,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-bebas;
+    @apply bg-background text-foreground;
   }
 }

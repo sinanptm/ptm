@@ -45,7 +45,11 @@ export default {
         ring: "hsl(var(--ring))",
       },
       fontFamily: {
-        bebas: ["var(--font-bebas)"],
+        'russo-one': ['var(--font-russo-one)'],
+        'bebas': ['var(--font-bebas-neue)'],
+        'space': ['var(--font-space-grotesk)'],
+        'outfit': ['var(--font-outfit)'],
+        'inter': ['var(--font-inter)'],
       },
       borderRadius: {
         lg: "var(--radius)",
