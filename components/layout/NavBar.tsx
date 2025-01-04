@@ -83,7 +83,7 @@ const NavBar = () => {
                 <div className='mt-8 flex flex-col space-y-4'>
                   {navItems.map((item, i) => (
                     <motion.div
-                      key={item.name}
+                      key={item.name + i}
                       custom={i}
                       initial="hidden"
                       animate="visible"
