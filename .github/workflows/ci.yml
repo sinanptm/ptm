@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: pnpm build
 
-       - name: Upload production build artifacts
+      - name: Upload production build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: nextjs-build
