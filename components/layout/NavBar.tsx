@@ -14,7 +14,7 @@ import {
 import LogoIcon from '../LogoIcon';
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import { navItems } from '@/constants';
+import { navLinks } from '@/constants';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ const NavBar = () => {
 
           <div className='hidden md:block'>
             <div className='ml-10 flex items-baseline space-x-4'>
-              {navItems.map((item) => (
+              {navLinks.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
@@ -75,7 +75,7 @@ const NavBar = () => {
                 </SheetHeader>
                 <SheetDescription />
                 <div className='mt-8 flex flex-col space-y-4'>
-                  {navItems.map((item, i) => (
+                  {navLinks.map((item, i) => (
                     <motion.div
                       key={item.name + i}
                       custom={i}
