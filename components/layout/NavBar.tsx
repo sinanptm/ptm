@@ -14,17 +14,10 @@ import {
 import LogoIcon from '../LogoIcon';
 import { motion } from "framer-motion";
 import Image from 'next/image';
+import { navItems } from '@/constants';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'About', href: '/about' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Contact', href: '/contact' },
-  ];
 
   const menuVariants = {
     hidden: { opacity: 0, x: 20 },
@@ -47,7 +40,7 @@ const NavBar = () => {
 
           <div className='hidden md:block'>
             <div className='ml-10 flex items-baseline space-x-4'>
-              {navItems.map((item, i) => (
+              {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
