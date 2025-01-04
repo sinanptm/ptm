@@ -1,194 +1,38 @@
+'use client';
+import { ImagesSlider } from "@/components/ui/images-slider";
+import { motion } from "framer-motion";
 
 const page = () => {
+  const images = [
+    "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ];
   return (
-    <main className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-6">
-        Kalari Center App Development
-      </h1>
-
-      {/* Introduction Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          About the Kalari Center
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          The Kalari Center is dedicated to preserving and promoting the
-          ancient martial art of <strong>Kalaripayattu</strong>. It offers
-          training programs, workshops, and events designed for enthusiasts of
-          all levels, from beginners to advanced practitioners.
-        </p>
-      </section>
-
-      {/* Services Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Our Services
-        </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <li>Personalized training sessions</li>
-          <li>Workshops on traditional Kalaripayattu techniques</li>
-          <li>Health and wellness programs</li>
-          <li>Instructor-led classes for all age groups</li>
-        </ul>
-      </section>
-
-      {/* Image Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Our Facilities
-        </h2>
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* <Image
-            src="https://via.placeholder.com/400x300"
-            alt="Kalari Training Hub"
-            className="rounded-lg shadow-lg"
-          /> */}
-          <p className="text-gray-700 leading-relaxed">
-            Our state-of-the-art training hubs provide the perfect environment
-            for mastering Kalaripayattu. Equipped with all necessary amenities,
-            our centers are designed to enhance your training experience.
-          </p>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="text-center">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Join Us Today!
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Ready to embark on your Kalaripayattu journey? Sign up now and
-          experience the power of this ancient martial art.
-        </p>
-        <button className="px-6 py-2 bg-orange-600 text-white rounded-lg shadow-md hover:bg-orange-700 transition">
-          Get Started
+    <ImagesSlider className="h-[40rem]" images={images}>
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: -80,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="z-50 flex flex-col justify-center items-center"
+      >
+        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          The hero section slideshow <br /> nobody asked for
+        </motion.p>
+        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+          <span>Join now →</span>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>
-      </section>
-      <h1 className="text-3xl font-bold text-center mb-6">
-        Kalari Center App Development
-      </h1>
-
-      {/* Introduction Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          About the Kalari Center
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          The Kalari Center is dedicated to preserving and promoting the
-          ancient martial art of <strong>Kalaripayattu</strong>. It offers
-          training programs, workshops, and events designed for enthusiasts of
-          all levels, from beginners to advanced practitioners.
-        </p>
-      </section>
-
-      {/* Services Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Our Services
-        </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <li>Personalized training sessions</li>
-          <li>Workshops on traditional Kalaripayattu techniques</li>
-          <li>Health and wellness programs</li>
-          <li>Instructor-led classes for all age groups</li>
-        </ul>
-      </section>
-
-      {/* Image Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Our Facilities
-        </h2>
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* <Image
-            src="https://via.placeholder.com/400x300"
-            alt="Kalari Training Hub"
-            className="rounded-lg shadow-lg"
-          /> */}
-          <p className="text-gray-700 leading-relaxed">
-            Our state-of-the-art training hubs provide the perfect environment
-            for mastering Kalaripayattu. Equipped with all necessary amenities,
-            our centers are designed to enhance your training experience.
-          </p>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="text-center">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Join Us Today!
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Ready to embark on your Kalaripayattu journey? Sign up now and
-          experience the power of this ancient martial art.
-        </p>
-        <button className="px-6 py-2 bg-orange-600 text-white rounded-lg shadow-md hover:bg-orange-700 transition">
-          Get Started
-        </button>
-      </section>
-      <h1 className="text-3xl font-bold text-center mb-6">
-        Kalari Center App Development
-      </h1>
-
-      {/* Introduction Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          About the Kalari Center
-        </h2>
-        <p className="text-gray-700 leading-relaxed">
-          The Kalari Center is dedicated to preserving and promoting the
-          ancient martial art of <strong>Kalaripayattu</strong>. It offers
-          training programs, workshops, and events designed for enthusiasts of
-          all levels, from beginners to advanced practitioners.
-        </p>
-      </section>
-
-      {/* Services Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Our Services
-        </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700">
-          <li>Personalized training sessions</li>
-          <li>Workshops on traditional Kalaripayattu techniques</li>
-          <li>Health and wellness programs</li>
-          <li>Instructor-led classes for all age groups</li>
-        </ul>
-      </section>
-
-      {/* Image Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Our Facilities
-        </h2>
-        <div className="flex flex-col sm:flex-row gap-4">
-          {/* <Image
-            src="https://via.placeholder.com/400x300"
-            alt="Kalari Training Hub"
-            className="rounded-lg shadow-lg"
-          /> */}
-          <p className="text-gray-700 leading-relaxed">
-            Our state-of-the-art training hubs provide the perfect environment
-            for mastering Kalaripayattu. Equipped with all necessary amenities,
-            our centers are designed to enhance your training experience.
-          </p>
-        </div>
-      </section>
-
-      {/* Call to Action Section */}
-      <section className="text-center">
-        <h2 className="text-2xl font-semibold text-orange-700 mb-4">
-          Join Us Today!
-        </h2>
-        <p className="text-gray-700 mb-4">
-          Ready to embark on your Kalaripayattu journey? Sign up now and
-          experience the power of this ancient martial art.
-        </p>
-        <button className="px-6 py-2 bg-orange-600 text-white rounded-lg shadow-md hover:bg-orange-700 transition">
-          Get Started
-        </button>
-      </section>
-    </main>
+      </motion.div>
+    </ImagesSlider>
   );
 };
 
