@@ -37,9 +37,8 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+       - name: Upload production build artifacts
+        uses: actions/upload-artifact@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+          name: nextjs-build
+          path: .next
