@@ -2,8 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
+import { LogoIconProps } from '@/types';
 
-const LogoIcon = ({ isAnimated = true }: { isAnimated?: boolean; }) => {
+
+
+const LogoIcon = ({ isAnimated = true, width = 16 }: LogoIconProps) => {
     const logoVariants = {
         initial: { opacity: 0, scale: 0.8 },
         animate: { opacity: 1, scale: 1, transition: { duration: 0.2, ease: 'easeOut' } },
@@ -39,7 +42,7 @@ const LogoIcon = ({ isAnimated = true }: { isAnimated?: boolean; }) => {
                         alt="PTM Kalari"
                         width={80}
                         height={0}
-                        className="w-16 h-auto"
+                        className={`w-${width} h-auto`}
                     />
                 </Link>
             </span>

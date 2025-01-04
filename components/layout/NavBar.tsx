@@ -33,7 +33,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className='sticky top-0 w-full z-50 backdrop-blur-2xl bg-black/90 bg-opacity-0'>
+    <nav className='sticky top-0 w-full z-50 backdrop-blur-sm'>
       <div className='relative'>
         <div className='flex items-center justify-between h-16 w-full z-50 px-4 sm:px-6 lg:px-14'>
           <LogoIcon />
@@ -44,6 +44,7 @@ const NavBar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
+                  prefetch={false}
                   className='relative text-white hover:text-orange-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 group'
                 >
                   {item.name}
@@ -66,7 +67,7 @@ const NavBar = () => {
                 </Button>
               </SheetTrigger>
 
-              <SheetContent className="bg-black/95 border-orange-500/20">
+              <SheetContent className="backdrop-blur-sm ">
                 <SheetHeader>
                   <SheetTitle onClick={() => setIsOpen(false)} >
                     <LogoIcon isAnimated={false} />
@@ -84,6 +85,7 @@ const NavBar = () => {
                     >
                       <Link
                         href={item.href}
+                        prefetch={false}
                         className='text-white hover:text-orange-400 block px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200 hover:bg-orange-500/10'
                         onClick={() => setIsOpen(false)}
                       >
