@@ -82,11 +82,11 @@ const Page = () => {
             className="space-y-4 px-4"
           >
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed tracking-wide">
-              Vedic Tradition of Kalari, Ayurveda and Legendary Martial Art of Kerala Kalarippayattu
+              Vedic Tradition of Kalari, Ayurveda and Legendary Martial Art of Kerala
             </p>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed">
-              is Reborn at Centre to Take good care of your Body, Mind and Soul in Gurukula Style
+            Kalarippayattu is Reborn at Centre to Take good care of your Body, Mind and Soul in Gurukula Style
             </p>
 
           </motion.div>
