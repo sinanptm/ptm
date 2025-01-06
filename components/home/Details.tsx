@@ -5,7 +5,6 @@ const Details = () => {
     return (
         <HomeSectionWrapper>
             <div className="w-full lg:w-1/2">
-                <h2 className="text-2xl font-bold text-gray-900">About Us</h2>
 
             </div>
 

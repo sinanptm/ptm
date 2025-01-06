@@ -1,5 +1,6 @@
 import HomeSectionWrapper from '@/hoc/HomeSectionWrapper';
 import Image from 'next/image';
+import Link from 'next/link';
 import { memo, useMemo } from 'react';
 
 const AboutUs = () => {
@@ -7,43 +8,58 @@ const AboutUs = () => {
 
     return (
         <HomeSectionWrapper>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 py-9">
 
-            <div className="w-full lg:w-1/2 flex justify-center items-center">
-                <Image
-                    src="/assets/images/home-about.jpg"
-                    alt="Kalarippayattu performers demonstrating synchronized movements"
-                    width={500}
-                    height={300}
-                    className="w-[400px] object-cover rounded-lg"
-                    priority
-                />
-            </div>
-
-            <div className="w-full lg:w-1/2 space-y-6">
-                <h2 className="text-orange-500 text-xl md:text-2xl">About Us</h2>
-
-                <div>
-                    <h3 className="text-4xl md:text-5xl lg:text-6xl leading-tight">
-                        {years} years of
-                    </h3>
-                    <div className="space-y-2">
-                        <p className="text-orange-500 text-2xl md:text-3xl lg:text-4xl leading-tight">
-                            Kalarippayattu, Kalari Marma & Ayurveda
-                        </p>
-                        <p className="text-2xl md:text-3xl lg:text-4xl leading-tight">
-                            Tradition with Unmatched Experience
-                        </p>
+                <div className="order-2 md:order-1 flex justify-center items-center">
+                    <div className="relative w-full max-w-[300px] md:max-w-[380px]">
+                        <Image
+                            src="/assets/images/home-about.jpg"
+                            alt="Kalarippayattu performers demonstrating synchronized movements"
+                            width={500}
+                            height={300}
+                            className="w-full h-auto object-cover"
+                            priority
+                        />
                     </div>
                 </div>
 
-                <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                    Kalarippayattu is one of the most famous martial art that has caught the
-                    attention of the world. PTM Kalari is a very familiar name to all the
-                    Kalari enthusiasts. The training at PTM Kalari by the well experienced
-                    Kalari Gurukkal makes it easier and natural for you to get inspired, involved,
-                    revel in and master Kalarippayattu. We are very specific in preserving the
-                    virtues of traditional Kalarippayattu martial arts and our mission is to populari...
-                </p>
+                <div className="order-1 md:order-2 flex flex-col">
+                    <h2 className="text-orange-500 text-xl md:text-2xl font-semibold tracking-wide">
+                        About Us
+                    </h2>
+
+                    <div className="space-y-4">
+                        <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                            {years} years of
+                        </h3>
+                        <div className="space-y-2">
+                            <p className="text-orange-500 text-xl md:text-1xl lg:text-2xl leading-tight">
+                                Kalarippayattu, Kalari Marma & Ayurveda
+                                <span className="text-white leading-tight">
+                                    {" "} Tradition with Unmatched Experience
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <p className="text-gray-300 md:text-base text-sm lg:text-lg leading-relaxed">
+                        Kalarippayattu is one of the most famous martial arts that has caught the
+                        attention of the world. PTM Kalari is a very familiar name to all
+                        Kalari enthusiasts. The training at PTM Kalari by the well-experienced
+                        Kalari Gurukkal makes it easier and natural for you to get inspired, involved,
+                        revel in and master Kalarippayattu. We are very specific in preserving the
+                        virtues of traditional Kalarippayattu martial arts and our mission is to popularize...
+                    </p>
+
+                    <Link
+                        href='/about'
+                        prefetch={false}
+                        className="bg-transparent text-orange-500  hover:text-white transition-colors w-fit text-base lg:text-lg"
+                    >
+                        Learn More
+                    </Link>
+                </div>
+
             </div>
         </HomeSectionWrapper>
     );
