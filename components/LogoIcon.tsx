@@ -13,20 +13,19 @@ const LogoIcon = ({ isAnimated = true, width = '64px', className }: LogoIconProp
         hover: { scale: 1.1, transition: { duration: 0.2, ease: 'easeInOut' } },
     };
 
-    const imageStyle = {
-        width: width,
-        height: 'auto',
-    };
 
     const ImageComponent = (
         <Image
             loading="eager"
             src="/assets/logo.png"
-            alt="PTM Kalari"
+            alt="PTM Kalari Logo"
             width={120}
             height={120}
             priority
-            style={imageStyle}
+            style={ {
+                width: width,
+                height: 'auto',
+            }}
             className={cn('object-contain', className)}
         />
     );
