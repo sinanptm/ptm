@@ -25,6 +25,7 @@ const LogoIcon = ({ isAnimated = true, width = '64px', className }: LogoIconProp
             alt="PTM Kalari"
             width={120}
             height={120}
+            priority
             style={imageStyle}
             className={cn('object-contain', className)}
         />

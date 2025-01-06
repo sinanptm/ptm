@@ -3,7 +3,7 @@ import ImageSlider from "@/components/home/ImageSlider";
 
 const Page = () => {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <ImageSlider />
       <AboutUs />
     </main>

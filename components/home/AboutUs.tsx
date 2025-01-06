@@ -2,11 +2,11 @@ import Image from 'next/image';
 import { memo, useMemo } from 'react';
 
 const AboutUs = () => {
-    const years = useMemo(()=>new Date().getFullYear() - 1994,[]);
+    const years = useMemo(() => new Date().getFullYear() - 1994, []);
 
     return (
         <section
-            className="relative py-16 md:py-24"       >
+            className="relative py-16 md:py-24 gradient-hero"       >
             <div className="container flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 <div className="w-full lg:w-1/2 flex justify-center items-center">
                     <Image

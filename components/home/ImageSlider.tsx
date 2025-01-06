@@ -5,6 +5,7 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 import { bannerImages } from "@/constants";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 const ImageSlider = () => {
     return (
@@ -17,10 +18,6 @@ const ImageSlider = () => {
                 animate={{
                     opacity: 1,
                     y: 0,
-                }}
-                transition={{
-                    duration: 0.8,
-                    ease: "easeOut",
                 }}
                 className="z-50 container mx-auto px-4 flex flex-col items-center justify-center h-full"
             >
@@ -78,24 +75,21 @@ const ImageSlider = () => {
                     </motion.h1>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 1 }}
                         className="space-y-4 px-4"
                     >
-                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed tracking-wide">
-                            Vedic Tradition of Kalari, Ayurveda and Legendary Martial Art of Kerala
-                        </p>
-
-                        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed">
-                            Take good care of your Body, Mind and Soul in Gurukula Style
-                        </p>
-                        <div className="mt-10">
+                        <TextGenerateEffect words=" Vedic Tradition of Kalari, Ayurveda and Legendary Martial Art of Kerala" className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed tracking-wide" />
+                        <TextGenerateEffect duration={0.8} words="Take good care of your Body, Mind and Soul in Gurukula Style" className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed" />
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.9 }}
+                            className="mt-10"
+                        >
                             <Link href={'/https://www.youtube.com/@PTMKALARI'} prefetch={false} className="px-3 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative">
                                 <span>Watch Video →</span>
                                 <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                             </Link>
-                        </div>
+                        </motion.div>
                     </motion.div>
                 </div>
             </motion.div>
