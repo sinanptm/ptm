@@ -91,7 +91,7 @@ const ImageSlider = () => {
                             Take good care of your Body, Mind and Soul in Gurukula Style
                         </p>
                         <div className="mt-10">
-                            <Link href={'/https://www.youtube.com/@PTMKALARI'} className="px-3 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative">
+                            <Link href={'/https://www.youtube.com/@PTMKALARI'} prefetch={false} className="px-3 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative">
                                 <span>Watch Video →</span>
                                 <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                             </Link>

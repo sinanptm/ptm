@@ -10,7 +10,7 @@ const AboutUs = () => {
             <div className="container flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 <div className="w-full lg:w-1/2 flex justify-center items-center">
                     <Image
-                        src="/assets/images/about-image.jpg"
+                        src="/assets/images/home-about.jpg"
                         alt="Kalarippayattu performers demonstrating synchronized movements"
                         width={500}
                         height={300}
