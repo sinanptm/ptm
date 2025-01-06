@@ -11,7 +11,7 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 py-9">
 
                 <div className="order-2 md:order-1 flex justify-center items-center">
-                    <div className="relative w-full max-w-[300px] md:max-w-[380px]">
+                    <div className="relative w-full max-w-[300px]">
                         <Image
                             src="/assets/images/home-about.jpg"
                             alt="Kalarippayattu performers demonstrating synchronized movements"
@@ -28,7 +28,7 @@ const AboutUs = () => {
                         About Us
                     </h2>
 
-                    <div className="space-y-4">
+                    <div>
                         <h3 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                             {years} years of
                         </h3>
@@ -42,7 +42,7 @@ const AboutUs = () => {
                         </div>
                     </div>
 
-                    <p className="text-gray-300 md:text-base text-sm lg:text-lg leading-relaxed">
+                    <p className="text-gray-300 md:text-base text-sm lg:text-lg leading-relaxed mt-3">
                         Kalarippayattu is one of the most famous martial arts that has caught the
                         attention of the world. PTM Kalari is a very familiar name to all
                         Kalari enthusiasts. The training at PTM Kalari by the well-experienced
@@ -50,14 +50,14 @@ const AboutUs = () => {
                         revel in and master Kalarippayattu. We are very specific in preserving the
                         virtues of traditional Kalarippayattu martial arts and our mission is to popularize...
                     </p>
-
                     <Link
-                        href='/about'
+                        href="/about"
                         prefetch={false}
-                        className="bg-transparent text-orange-500  hover:text-white transition-colors w-fit text-base lg:text-lg"
+                        className="bg-transparent text-orange-500 hover:text-white transition-colors w-fit text-base lg:text-lg mt-3"
                     >
-                        Learn More
+                        Learn More About Us
                     </Link>
+
                 </div>
 
             </div>

@@ -2,7 +2,7 @@ import { RootLayoutProps } from "@/types/props";
 import { metadata } from "./metadata";
 import "@/styles/globals.css";
 import NavBar from "@/components/layout/NavBar";
-import { bebas, russoOne, inter, outfit, spaceGrotesk } from "./fonts";
+import { bebas, russoOne } from "./fonts";
 
 
 const RootLayout = ({ children }: RootLayoutProps) => {
@@ -10,7 +10,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${russoOne.variable} ${bebas.variable} ${spaceGrotesk.variable} ${outfit.variable} ${inter.variable}`}
+      className={`${russoOne.variable} ${bebas.variable} ;`}
     >
       <body className={`antialiased font-russo-one`}>
         <NavBar />
