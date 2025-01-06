@@ -3,6 +3,7 @@ import { metadata } from "./metadata";
 import "@/styles/globals.css";
 import NavBar from "@/components/layout/NavBar";
 import { bebas, russoOne } from "./fonts";
+import Footer from "@/components/layout/Footer";
 
 
 const RootLayout = ({ children }: RootLayoutProps) => {
@@ -15,6 +16,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <body className={`antialiased font-russo-one`}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
