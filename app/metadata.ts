@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'Pavukandy',
     'Martial Arts Academy'
   ],
-  authors: [{ name: 'PTM Kalari Pavukandy' }],
+  authors: [{ name: 'sinanptm', url:"https://sinanptm.vercel.app" }],
   creator: 'PTM Kalari Pavukandy',
   publisher: 'PTM Kalari Pavukandy',
   formatDetection: {
@@ -49,15 +49,24 @@ export const metadata: Metadata = {
       },
     ],
   },
+  verification: {
+    google: "google815b889e8dec9b27",
+  },
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
+  appleWebApp: {
+    capable: true,
+    title: "PTM Kalari",
+    statusBarStyle: "black-translucent",
+},
 };

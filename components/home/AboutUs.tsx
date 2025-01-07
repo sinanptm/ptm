@@ -1,4 +1,4 @@
-import HomeSectionWrapper from '@/hoc/HomeSectionWrapper';
+import HomeSectionWrapper from '@/components/hoc/HomeSectionWrapper';
 import Image from 'next/image';
 import Link from 'next/link';
 import { memo, useMemo } from 'react';
@@ -24,7 +24,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className="order-1 md:order-2 flex flex-col">
-                    <h2 className="text-orange-500 text-xl md:text-2xl font-semibold tracking-wide">
+                    <h2 className="text-orange-500 uppercase text-xl md:text-2xl font-semibold tracking-wide">
                         About Us
                     </h2>
 
@@ -53,7 +53,7 @@ const AboutUs = () => {
                     <Link
                         href="/about"
                         prefetch={false}
-                        className="bg-transparent text-orange-500 hover:text-white transition-colors w-fit text-base lg:text-lg mt-3"
+                        className="bg-transparent  text-orange-500 hover:text-white transition-colors w-fit text-base lg:text-lg mt-3"
                     >
                         Learn More About Us
                     </Link>

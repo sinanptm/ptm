@@ -55,37 +55,40 @@ const Footer = () => {
                             <li className="flex items-center gap-2 text-gray-300">
                                 <Mail className="w-4 h-4 text-orange-500" />
                                 <Link
-                                    href="mailto:info@ptmkalari.com"
+                                    href="mailto:ptmkalaripayattu@gmail.com"
                                     className="text-sm hover:text-orange-400 transition-colors"
                                     prefetch={false}
                                 >
-                                    info@ptmkalari.com
+                                    ptmkalaripayattu@gmail.com
                                 </Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className={`text-orange-500 text-xl`}>Follow Us</h3>
+                        <h3 className={`text-orange-500 text-xl`}>Social Links</h3>
                         <div className="flex gap-4">
                             <Link
                                 href="https://www.instagram.com/ptm_kalari/"
                                 target="_blank"
                                 prefetch={false}
                                 rel="noopener noreferrer"
+                                aria-label="Follow us on Instagram"
                                 className="text-gray-300 hover:text-orange-400 transition-colors"
                             >
                                 <Instagram className="w-5 h-5" />
                             </Link>
                             <Link
-                                href='https://www.youtube.com/@PTMKALARI'
+                                href="https://www.youtube.com/@PTMKALARI"
                                 target="_blank"
                                 prefetch={false}
                                 rel="noopener noreferrer"
+                                aria-label="Subscribe to our YouTube channel"
                                 className="text-gray-300 hover:text-orange-400 transition-colors"
                             >
                                 <Youtube className="w-5 h-5" />
                             </Link>
+
                         </div>
                     </div>
                 </div>

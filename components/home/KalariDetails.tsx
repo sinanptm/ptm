@@ -1,4 +1,4 @@
-import HomeSectionWrapper from '@/hoc/HomeSectionWrapper';
+import HomeSectionWrapper from '@/components/hoc/HomeSectionWrapper';
 import Image from 'next/image';
 import { memo } from 'react';
 import Link from 'next/link';
@@ -8,7 +8,7 @@ const KalariDetails = () => {
         <HomeSectionWrapper>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                 <div className="order-1 flex flex-col gap-3">
-                    <h2 className={` text-3xl md:text-4xl lg:text-5xl text-orange-500 leading-tight mb-4`}>
+                    <h2 className={` text-3xl md:text-4xl  lg:text-5xl text-orange-500 leading-tight mb-4`}>
                         PTM Kalari Pavukkandy
                     </h2>
                     
@@ -25,7 +25,7 @@ const KalariDetails = () => {
                     <Link
                         href="/contact"
                         prefetch={false}
-                        className="bg-transparent text-orange-500 hover:text-white transition-colors w-fit text-base lg:text-lg"
+                        className="bg-transparent  text-orange-500 hover:text-white transition-colors w-fit text-base lg:text-lg"
                     >
                        Contact Us
                     </Link>
