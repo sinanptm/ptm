@@ -7,7 +7,7 @@ import { navLinks } from '@/constants';
 
 const Footer = () => {
     return (
-        <footer className="bg-black/80 backdrop-blur-sm border-t border-orange-500/20">
+        <footer className="bg-red-950/25 backdrop-blur-sm border-t border-orange-500/20">
             <div className="container px-4 pt-12 pb-5 mx-auto">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
 

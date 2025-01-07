@@ -1,10 +1,11 @@
 import HomeSectionWrapper from '@/components/hoc/HomeSectionWrapper';
+import { getYears } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { memo, useMemo } from 'react';
 
 const AboutUs = () => {
-    const years = useMemo(() => new Date().getFullYear() - 1994, []);
+    const years = useMemo(getYears, [getYears]);
 
     return (
         <HomeSectionWrapper>
