@@ -32,7 +32,7 @@ const KalariDetails = () => {
                 </div>
 
                 <div className="order-2 flex justify-center items-center">
-                    <div className="relative w-full max-w-[300px] md:max-w-[380px] bg-white p-4 rounded-lg">
+                    <div className="relative w-full max-w-[300px] md:max-w-[380px]  p-4 rounded-lg">
                         <Image
                             src="/assets/images/founder.jpg"
                             alt="Founder of PTM Kalari Pavukkandy"
@@ -42,7 +42,7 @@ const KalariDetails = () => {
                             priority
                         />
                     </div>
-                </div>
+                 </div>
             </div>
         </HomeSectionWrapper>
     );

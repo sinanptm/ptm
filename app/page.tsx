@@ -1,13 +1,13 @@
 import AboutUs from "@/components/home/AboutUs";
-import Details from "@/components/home/Details";
+import KalariDetails from "@/components/home/KalariDetails";
 import ImageSlider from "@/components/home/ImageSlider";
 
 const Page = () => {
   return (
     <main className="min-h-screen">
       <ImageSlider />
+      <KalariDetails />
       <AboutUs />
-      <Details />
     </main>
   );
 };

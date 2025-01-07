@@ -4,25 +4,33 @@
 
 @layer base {
   :root {
-    --background: 20 14.3% 4.1%;
-    --foreground: 0 0% 95%;
-    --card: 24 9.8% 10%;
+    --background: 345 27% 7%;    /* Deep red-tinted black background */
+    --foreground: 0 0% 95%;      /* Light text for contrast */
+    
+    --card: 345 25% 12%;         /* Slightly lighter deep red for cards */
     --card-foreground: 0 0% 95%;
-    --popover: 0 0% 9%;
+    
+    --popover: 345 25% 9%;       /* Deep red popover background */
     --popover-foreground: 0 0% 95%;
-    --primary: 142.1 70.6% 45.3%;
-    --primary-foreground: 144.9 80.4% 10%;
-    --secondary: 240 3.7% 15.9%;
+    
+    --primary: 12 84% 55%;       /* Vibrant red-orange for primary elements */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 345 20% 15%;    /* Muted deep red for secondary elements */
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 12 6.5% 15.1%;
+    
+    --muted: 345 15% 15%;        /* Subtle deep red for muted elements */
+    --muted-foreground: 0 0% 70%;
+    
+    --accent: 12 75% 12%;        /* Rich red accent */
     --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 142.4 71.8% 29.2%;
+    
+    --destructive: 0 84% 34%;    /* Strong red for destructive actions */
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 345 20% 18%;       /* Deep red border color */
+    --input: 345 20% 16%;        /* Deep red input background */
+    --ring: 12 84% 45%;          /* Red ring for focus states */
   }
 }
 
