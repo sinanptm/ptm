@@ -6,7 +6,7 @@ import Link from 'next/link';
 const KalariDetails = () => {
     return (
         <HomeSectionWrapper>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 py-9">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
                 <div className="order-1 flex flex-col gap-3">
                     <h2 className={` text-3xl md:text-4xl lg:text-5xl text-orange-500 leading-tight mb-4`}>
                         PTM Kalari Pavukkandy

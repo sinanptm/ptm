@@ -8,7 +8,7 @@ const AboutUs = () => {
 
     return (
         <HomeSectionWrapper>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16  py-9">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
                 <div className="order-2 md:order-1 flex justify-center items-center">
                     <div className="relative w-full max-w-[300px]">
