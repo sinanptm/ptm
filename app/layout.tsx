@@ -11,7 +11,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${russoOne.variable} ${bebas.variable} ;`}
+      className={`${russoOne.variable} ${bebas.variable}`}
     >
       <body className={`antialiased font-russo-one`}>
         <NavBar />

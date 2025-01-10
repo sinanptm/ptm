@@ -9,7 +9,7 @@ const KalariTraining = () => {
   return (
     <HomeSectionWrapper>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
-        {/* Content Section */}
+
         <div className="flex flex-col justify-center space-y-6">
           <h3 className="text-orange-500 font-russo-one text-xl uppercase tracking-wide">
             Kalari Training
