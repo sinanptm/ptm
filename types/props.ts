@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { BannerImageType } from ".";
+import { BannerImageType, Service } from ".";
 
 export type RootLayoutProps = Readonly<{
   children: ReactNode;
@@ -20,3 +20,9 @@ export interface ImagesSliderProps {
   autoplay?: boolean;
   direction?: "up" | "down" | "left" | "right";
 }
+
+export type ServiceCardProps = {
+  service: Service;
+  isActive: boolean;
+  onClick: () => void;
+};

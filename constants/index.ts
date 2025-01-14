@@ -1,5 +1,4 @@
 import { BannerImageType, Service } from "@/types";
-import { Droplet, Leaf, FlaskRoundIcon as Flask } from "lucide-react";
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -26,18 +25,21 @@ export const bannerImages: BannerImageType[] = [
 
 export const services: Service[] = [
   {
-    title: "Unani Treatments",
-    description: "Experience the healing power of traditional Unani medicine, focusing on holistic wellness and natural remedies.",
-    icon: Droplet,
+    name: 'Ayurveda',
+    description: 'Ancient Indian system of natural healing that focuses on balancing the body, mind, and spirit using herbs, diet, and lifestyle practices.',
+    image: '/assets/images/uyichil.avif',
+    color: 'from-green-600 to-green-800',
   },
   {
-    title: "Ayurveda Treatments",
-    description: "Discover balance and rejuvenation through our comprehensive Ayurvedic treatments and therapies.",
-    icon: Leaf,
+    name: 'Unani',
+    description: 'Traditional Persian medicine that emphasizes the use of natural remedies and focuses on the four humors to maintain health and treat illnesses.',
+    image: '/assets/images/unani.webp',
+    color: 'from-orange-500 to-orange-700',
   },
   {
-    title: "Medicine Making",
-    description: "We craft authentic Ayurvedic and Unani medicines using time-honored techniques and pure ingredients.",
-    icon: Flask,
+    name: 'Kalari',
+    description: 'Ancient Indian martial art and healing system that combines combat techniques with therapeutic practices to promote physical and mental well-being.',
+    image: '/assets/images/training.jpg',
+    color: 'from-orange-600 to-orange-800',
   },
-];
+]

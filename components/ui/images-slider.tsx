@@ -174,7 +174,7 @@ export const ImagesSlider: React.FC<ImagesSliderProps> = ({
               src={images[currentIndex].name}
               alt={images[currentIndex].alt}
               fill
-              priority={currentIndex === 0}
+              priority
               className="object-cover object-center"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
             />

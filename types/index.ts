@@ -3,9 +3,10 @@ export interface BannerImageType {
   alt: string;
 }
 
+
 export interface Service {
-  description: string;
-  // eslint-disable-next-line
-  icon: any;
-  title: string;
+  name: string
+  description: string
+  image: string
+  color: string
 }
