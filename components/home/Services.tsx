@@ -3,8 +3,29 @@
 import { memo, useState, useCallback, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import HomeSectionWrapper from '@/components/hoc/HomeSectionWrapper';
-import { services } from '@/constants';
 import ServiceCard from '../ServiceCard';
+import { Service } from '@/types';
+
+export const services: Service[] = [
+  {
+    name: 'Kalari',
+    description: 'Ancient Indian martial art and healing system that combines combat techniques with therapeutic practices to promote physical and mental well-being.',
+    image: '/assets/images/training.jpg',
+    color: 'from-red-600 to-red-800',
+  },
+  {
+    name: 'Ayurveda',
+    description: 'Ancient Indian system of natural healing that focuses on balancing the body, mind, and spirit using herbs, diet, and lifestyle practices.',
+    image: '/assets/images/uyichil.avif',
+    color: 'from-green-600 to-green-800',
+  },
+  {
+    name: 'Unani',
+    description: 'Traditional Persian medicine that emphasizes the use of natural remedies and focuses on the four humors to maintain health and treat illnesses.',
+    image: '/assets/images/unani.webp',
+    color: 'from-blue-500 to-blue-700',
+  }
+];
 
 const HolisticServices = () => {
   const [activeIndex, setActiveIndex] = useState(0);
