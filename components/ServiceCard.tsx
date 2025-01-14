@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { memo } from "react";
 import { ServiceCardProps } from "@/types/props";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 
 const ServiceCard = ({ service, isActive, onClick }: ServiceCardProps) => (
@@ -30,7 +31,7 @@ const ServiceCard = ({ service, isActive, onClick }: ServiceCardProps) => (
       priority
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
-    <div className={`absolute inset-0 bg-gradient-to-t ${isActive ? 'from-black to-transparent' : service.color} opacity-70`} />
+    <div className={cn("absolute inset-0 bg-gradient-to-t opacity-70", isActive ? "from-black to-transparent" : service.color)} />
     <div className="absolute inset-0 flex flex-col justify-end p-6">
       <h3 className="text-3xl font-russo-one mb-2 text-white">{service.name}</h3>
       <p className="text-gray-200 mb-4 line-clamp-3">{service.description}</p>

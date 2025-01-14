@@ -4,7 +4,6 @@ export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
   { name: 'About', href: '/about' },
-  // { name: 'Gallery', href: '/gallery' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -22,8 +21,13 @@ export const bannerImages: BannerImageType[] = [
     alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
   },
 ];
-
 export const services: Service[] = [
+  {
+    name: 'Kalari',
+    description: 'Ancient Indian martial art and healing system that combines combat techniques with therapeutic practices to promote physical and mental well-being.',
+    image: '/assets/images/training.jpg',
+    color: 'from-red-600 to-red-800',
+  },
   {
     name: 'Ayurveda',
     description: 'Ancient Indian system of natural healing that focuses on balancing the body, mind, and spirit using herbs, diet, and lifestyle practices.',
@@ -34,12 +38,6 @@ export const services: Service[] = [
     name: 'Unani',
     description: 'Traditional Persian medicine that emphasizes the use of natural remedies and focuses on the four humors to maintain health and treat illnesses.',
     image: '/assets/images/unani.webp',
-    color: 'from-orange-500 to-orange-700',
-  },
-  {
-    name: 'Kalari',
-    description: 'Ancient Indian martial art and healing system that combines combat techniques with therapeutic practices to promote physical and mental well-being.',
-    image: '/assets/images/training.jpg',
-    color: 'from-orange-600 to-orange-800',
-  },
-]
+    color: 'from-blue-500 to-blue-700',
+  }
+];
