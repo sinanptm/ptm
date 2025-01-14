@@ -10,3 +10,11 @@ export interface Service {
   image: string
   color: string
 }
+
+export interface Center {
+  name: string
+  location: string
+  description: string
+  image: string
+  mapUrl: string
+}

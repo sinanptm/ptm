@@ -1,4 +1,4 @@
-import { BannerImageType, Service } from "@/types";
+import { BannerImageType, Center, Service } from "@/types";
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -41,3 +41,42 @@ export const services: Service[] = [
     color: 'from-blue-500 to-blue-700',
   }
 ];
+
+
+export const centers: Center[] = [
+  {
+    name: 'PTM Kalari Sangam',
+    location: 'Thiruvananthapuram, Kerala',
+    description: 'Our main center, offering comprehensive Kalarippayattu training and Ayurvedic treatments.',
+    image: '/assets/images/training1.jpg',
+    mapUrl: 'https://goo.gl/maps/exampleThiruvananthapuram',
+  },
+  {
+    name: 'Kalari Kendram',
+    location: 'Kochi, Kerala',
+    description: 'A modern facility focusing on traditional Kalari techniques and holistic healing practices.',
+    image: '/assets/images/training2.jpg',
+    mapUrl: 'https://goo.gl/maps/exampleKochi',
+  },
+  {
+    name: 'Gurukkal Academy',
+    location: 'Kozhikode, Kerala',
+    description: 'Specializing in advanced Kalarippayattu training and Marma therapy.',
+    image: '/assets/images/unani.webp',
+    mapUrl: 'https://goo.gl/maps/exampleKozhikode',
+  },
+  {
+    name: 'Kalari Wellness Center',
+    location: 'Bangalore, Karnataka',
+    description: 'Bringing the ancient art of Kalarippayattu to urban wellness enthusiasts.',
+    image: '/assets/images/center-bangalore.jpg',
+    mapUrl: 'https://goo.gl/maps/exampleBangalore',
+  },
+  {
+    name: 'Traditional Kalari Institute',
+    location: 'Chennai, Tamil Nadu',
+    description: 'Preserving and teaching authentic Kalarippayattu techniques in the heart of Chennai.',
+    image: '/assets/images/center-chennai.jpg',
+    mapUrl: 'https://goo.gl/maps/exampleChennai',
+  },
+]
