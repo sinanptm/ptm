@@ -31,7 +31,7 @@ const NotFound = () => {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-gray-400 max-w-md mx-auto"
         >
-          Oops! It seems you've ventured into uncharted territory. Let's get you back on track.
+          Oops! It seems you&apos;ve ventured into uncharted territory. Let&apos;s get you back on track.
         </motion.p>
         <motion.div
           initial={{ y: 20, opacity: 0 }}
