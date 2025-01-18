@@ -78,17 +78,17 @@ const ImageSlider = () => {
                     <motion.div
                         className="space-y-3 px-4"
                     >
-                        <TextGenerateEffect words=" Vedic Tradition of Kalari, Ayurveda and Legendary Martial Art of Kerala" className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed tracking-wide" />
-                        <TextGenerateEffect duration={0.8} words="Take good care of your Body, Mind and Soul in Gurukula Style" className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-light leading-relaxed" />
+                        <TextGenerateEffect words=" Vedic Tradition of Kalari, Ayurveda and Legendary Martial Art of Kerala" className="text-sm sm:text-base md:text-lg lg:text-xl font-light leading-relaxed tracking-wide" />
+                        <TextGenerateEffect duration={0.8} words="Take good care of your Body, Mind and Soul in Gurukula Style" className="text-sm sm:text-base md:text-lg lg:text-xl font-light leading-relaxed" />
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.9 }}
                             className="mt-10"
                         >
-                            <Link href={'https://www.youtube.com/@PTMKALARI'} prefetch={false} className="px-3 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative">
-                                <span>Watch Video →</span>
-                                <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+                            <Link href={'https://www.youtube.com/@PTMKALARI'} prefetch={false} className="px-3 py-2 backdrop-blur-sm border bg-orange-300/15 border-orange-500/10  mx-auto text-center rounded-full relative">
+                                <span>Watch Videos →</span>
+                                <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-orange-500 to-orange-800" />
                             </Link>
                         </motion.div>
                     </motion.div>
