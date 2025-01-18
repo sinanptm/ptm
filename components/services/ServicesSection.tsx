@@ -32,7 +32,7 @@ const ServicesSection = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
               />
-              <div className={`absolute inset-0 bg-gradient-to-r ${service.color} opacity-40`}></div>
+              <div className={`absolute inset-0 ${service.color} opacity-40`}></div>
             </div>
           </motion.div>
 

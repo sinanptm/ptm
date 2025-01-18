@@ -41,4 +41,16 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .service-gradient-red {
+    @apply bg-gradient-to-r from-red-600 to-red-800;
+  }
+
+  .service-gradient-green {
+    @apply bg-gradient-to-r from-green-600 to-green-800;
+  }
+
+  .service-gradient-blue {
+    @apply bg-gradient-to-r from-blue-500 to-blue-700;
+  }
 }

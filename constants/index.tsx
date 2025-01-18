@@ -24,7 +24,7 @@ export const bannerImages: BannerImageType[] = [
   },
 ];
 
-export const services:Service[] = [
+export const services: Service[] = [
   {
     name: 'Kalari',
     title: 'Traditional Kalarippayattu Training',
@@ -36,7 +36,7 @@ export const services:Service[] = [
       'Traditional weapon training'
     ],
     image: '/assets/images/training.jpg',
-    color: 'from-red-600 to-red-800'
+    color: 'service-gradient-red'
   },
   {
     name: 'Ayurveda',
@@ -49,7 +49,7 @@ export const services:Service[] = [
       'Therapeutic massages and treatments'
     ],
     image: '/assets/images/uyichil.avif',
-    color: 'from-green-600 to-green-800'
+    color: 'service-gradient-green'
   },
   {
     name: 'Unani',
@@ -62,7 +62,7 @@ export const services:Service[] = [
       'Therapeutic treatments'
     ],
     image: '/assets/images/unani.webp',
-    color: 'from-blue-500 to-blue-700'
+    color: 'service-gradient-blue'
   }
 ];
 
@@ -102,7 +102,7 @@ export const centers: Center[] = [
     image: '/assets/images/center-chennai.jpg',
     mapUrl: 'https://goo.gl/maps/exampleChennai',
   },
-]
+];
 
 
 export const benefits = [
@@ -135,24 +135,24 @@ export const benefits = [
     color: "from-amber-500/20 to-amber-600/20"
   }
 ];
-  
+
 export const practices = [
-    {
-      title: "Natural Healing",
-      description: "Harnessing the power of nature for holistic wellness",
-      icon: <Leaf className="w-6 h-6 text-emerald-500" />,
-      details: "Our approach integrates natural remedies and healing techniques that have been refined over generations."
-    },
-    {
-      title: "Balance",
-      description: "Restoring harmony between body, mind, and spirit",
-      icon: <Activity className="w-6 h-6 text-blue-500" />,
-      details: "We focus on achieving perfect equilibrium in your body's systems through traditional wisdom."
-    },
-    {
-      title: "Personalized Care",
-      description: "Tailored treatments for individual needs",
-      icon: <Shield className="w-6 h-6 text-purple-500" />,
-      details: "Every treatment plan is uniquely crafted to address your specific health concerns and goals."
-    }
-  ];
+  {
+    title: "Natural Healing",
+    description: "Harnessing the power of nature for holistic wellness",
+    icon: <Leaf className="w-6 h-6 text-emerald-500" />,
+    details: "Our approach integrates natural remedies and healing techniques that have been refined over generations."
+  },
+  {
+    title: "Balance",
+    description: "Restoring harmony between body, mind, and spirit",
+    icon: <Activity className="w-6 h-6 text-blue-500" />,
+    details: "We focus on achieving perfect equilibrium in your body's systems through traditional wisdom."
+  },
+  {
+    title: "Personalized Care",
+    description: "Tailored treatments for individual needs",
+    icon: <Shield className="w-6 h-6 text-purple-500" />,
+    details: "Every treatment plan is uniquely crafted to address your specific health concerns and goals."
+  }
+];
