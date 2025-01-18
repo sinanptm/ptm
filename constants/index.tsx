@@ -1,4 +1,6 @@
 import { BannerImageType, Center, Service } from "@/types";
+import { Activity, Leaf, Shield } from "lucide-react";
+import Image from "next/image";
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -21,27 +23,48 @@ export const bannerImages: BannerImageType[] = [
     alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
   },
 ];
-export const services: Service[] = [
+
+export const services:Service[] = [
   {
     name: 'Kalari',
+    title: 'Traditional Kalarippayattu Training',
     description: 'Ancient Indian martial art and healing system that combines combat techniques with therapeutic practices to promote physical and mental well-being.',
+    details: [
+      'Combat training and self-defense techniques',
+      'Physical conditioning and flexibility',
+      'Mental discipline and concentration',
+      'Traditional weapon training'
+    ],
     image: '/assets/images/training.jpg',
-    color: 'from-red-600 to-red-800',
+    color: 'from-red-600 to-red-800'
   },
   {
     name: 'Ayurveda',
+    title: 'Holistic Ayurvedic Treatment',
     description: 'Ancient Indian system of natural healing that focuses on balancing the body, mind, and spirit using herbs, diet, and lifestyle practices.',
+    details: [
+      'Personalized treatment plans',
+      'Herbal medicine consultations',
+      'Dietary and lifestyle guidance',
+      'Therapeutic massages and treatments'
+    ],
     image: '/assets/images/uyichil.avif',
-    color: 'from-green-600 to-green-800',
+    color: 'from-green-600 to-green-800'
   },
   {
     name: 'Unani',
+    title: 'Traditional Unani Medicine',
     description: 'Traditional Persian medicine that emphasizes the use of natural remedies and focuses on the four humors to maintain health and treat illnesses.',
+    details: [
+      'Natural remedy consultations',
+      'Holistic health assessments',
+      'Preventive care guidance',
+      'Therapeutic treatments'
+    ],
     image: '/assets/images/unani.webp',
-    color: 'from-blue-500 to-blue-700',
+    color: 'from-blue-500 to-blue-700'
   }
 ];
-
 
 export const centers: Center[] = [
   {
@@ -80,3 +103,56 @@ export const centers: Center[] = [
     mapUrl: 'https://goo.gl/maps/exampleChennai',
   },
 ]
+
+
+export const benefits = [
+  {
+    title: "Holistic Healing",
+    modern: "Focuses on specific symptoms and isolated treatments",
+    traditional: "Integrates body, mind, and spirit for complete wellness",
+    icon: "🌿",
+    color: "from-green-500/20 to-green-600/20"
+  },
+  {
+    title: "Natural Approach",
+    modern: "Relies heavily on synthetic medications",
+    traditional: "Uses natural herbs and time-tested remedies",
+    icon: "⚕️",
+    color: "from-blue-500/20 to-blue-600/20"
+  },
+  {
+    title: "Preventive Care",
+    modern: "Reactive treatment after illness occurs",
+    traditional: "Proactive maintenance of health and vitality",
+    icon: "🔄",
+    color: "from-purple-500/20 to-purple-600/20"
+  },
+  {
+    title: "Long-term Wellness",
+    modern: "May require continuous medication",
+    traditional: "Builds lasting immunity and natural resilience",
+    icon: "⏳",
+    color: "from-amber-500/20 to-amber-600/20"
+  }
+];
+  
+export const practices = [
+    {
+      title: "Natural Healing",
+      description: "Harnessing the power of nature for holistic wellness",
+      icon: <Leaf className="w-6 h-6 text-emerald-500" />,
+      details: "Our approach integrates natural remedies and healing techniques that have been refined over generations."
+    },
+    {
+      title: "Balance",
+      description: "Restoring harmony between body, mind, and spirit",
+      icon: <Activity className="w-6 h-6 text-blue-500" />,
+      details: "We focus on achieving perfect equilibrium in your body's systems through traditional wisdom."
+    },
+    {
+      title: "Personalized Care",
+      description: "Tailored treatments for individual needs",
+      icon: <Shield className="w-6 h-6 text-purple-500" />,
+      details: "Every treatment plan is uniquely crafted to address your specific health concerns and goals."
+    }
+  ];

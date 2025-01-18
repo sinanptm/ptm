@@ -9,6 +9,8 @@ export interface Service {
   description: string
   image: string
   color: string
+  title:string
+  details:string[]
 }
 
 export interface Center {

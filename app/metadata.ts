@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'Pavukandy',
     'Martial Arts Academy'
   ],
-  authors: [{ name: 'sinanptm', url:"https://sinanptm.vercel.app" }],
+  authors: [{ name: 'sinanptm', url: "https://sinanptm.vercel.app" }],
   creator: 'PTM Kalari Pavukandy',
   publisher: 'PTM Kalari Pavukandy',
   formatDetection: {
@@ -42,12 +42,20 @@ export const metadata: Metadata = {
     description: 'Discover the ancient art of Kalarippayattu at PTM Kalari Pavukandy. Learn traditional Kerala martial arts from experienced masters.',
     images: [
       {
-        url: '/assets/og-image.jpg',
+        url: '/assets/images/og/og-image.png',
         width: 1200,
         height: 630,
         alt: 'PTM Kalari Pavukandy Training Center',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Traditional Healing & Martial Arts Services | PTM Kalari Pavukandy',
+    description: 'Discover our comprehensive range of traditional healing services and authentic Kalarippayattu training programs.',
+    images: ['/assets/images/og/og-image.png'],
+    creator: '@ptmkalari',
+    site: '@ptmkalari',
   },
   verification: {
     google: "google815b889e8dec9b27",
@@ -68,5 +76,5 @@ export const metadata: Metadata = {
     capable: true,
     title: "PTM Kalari",
     statusBarStyle: "black-translucent",
-},
+  },
 };

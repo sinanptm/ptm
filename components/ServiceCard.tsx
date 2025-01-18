@@ -5,8 +5,7 @@ import { ServiceCardProps } from "@/types/props";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-
-const ServiceCard = ({ service, isActive, onClick }: ServiceCardProps) => (
+const ServiceCard = ({ service, isActive, onClick, hasButton }: ServiceCardProps) => (
   <motion.div
     className={`relative w-full h-[400px] rounded-lg overflow-hidden cursor-pointer ${isActive ? 'ring-4 ring-orange-500' : ''}`}
     initial={{ opacity: 0, scale: 0.8 }}
@@ -35,15 +34,17 @@ const ServiceCard = ({ service, isActive, onClick }: ServiceCardProps) => (
     <div className="absolute inset-0 flex flex-col justify-end p-6">
       <h3 className="text-3xl font-russo-one mb-2 text-white">{service.name}</h3>
       <p className="text-gray-200 mb-4 line-clamp-3">{service.description}</p>
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="px-6 py-2 bg-white text-black font-russo-one text-lg rounded-full w-fit"
-      >
-        <Link href={'/services'} prefetch={false}>
-          More About {service.name}
-        </Link>
-      </motion.button>
+      {hasButton && (
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-6 py-2 bg-white text-black font-russo-one text-lg rounded-full w-fit"
+        >
+          <Link href={'/services'} prefetch={false}>
+            More About {service.name}
+          </Link>
+        </motion.button>
+      )}
     </div>
   </motion.div>
 );

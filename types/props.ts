@@ -25,4 +25,5 @@ export type ServiceCardProps = {
   service: Service;
   isActive: boolean;
   onClick: () => void;
+  hasButton:boolean;
 };

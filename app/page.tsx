@@ -2,8 +2,9 @@ import AboutUs from "@/components/home/AboutUs";
 import KalariDetails from "@/components/home/KalariDetails";
 import ImageSlider from "@/components/home/ImageSlider";
 import KalariTraining from "@/components/home/KalariTraining";
-import Services from "@/components/home/Services";
 import Centers from "@/components/home/Centers";
+import ServicesList from "@/components/ServicesList";
+import HomeSectionWrapper from "@/components/hoc/HomeSectionWrapper";
 
 const Page = () => {
   return (
@@ -12,7 +13,9 @@ const Page = () => {
       <KalariDetails />
       <AboutUs />
       <KalariTraining />
-      <Services />
+      <HomeSectionWrapper>
+        <ServicesList />
+      </HomeSectionWrapper>
       <Centers />
     </main>
   );
