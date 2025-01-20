@@ -34,7 +34,7 @@ const ContactInfo = () => {
         className="mt-8 pt-2 sm:pt-9  border-gray-700"
       >
         <div className="bg-orange-700/20 p-4 rounded-lg">
-          <h4 className="text-lg font-medium text-orange-500 mb-2">Ready to get started?</h4>
+          <h3 className="text-lg font-medium text-orange-500 mb-2">Ready to get started?</h3>
           <p className="text-gray-300 text-sm">
             Fill out the form and our team will get back to you promptly to discuss your needs.
           </p>

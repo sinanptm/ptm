@@ -59,7 +59,14 @@ const AllCenters = () => {
                     </div>
                     <div className="flex items-center space-x-2 text-gray-400">
                       <MapPin size={16} className="text-orange-500" />
-                      <Link href={center.mapUrl} className="text-sm group-hover:text-gray-300 transition-colors duration-300">
+                      <Link
+                        prefetch={false}
+                        href={center.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="text-sm group-hover:text-gray-300 transition-colors duration-300"
+                      >
                         {center.location}
                       </Link>
                     </div>
