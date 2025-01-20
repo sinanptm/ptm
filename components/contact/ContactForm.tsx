@@ -62,7 +62,7 @@ const ContactForm = () => {
             placeholder="Your name"
             value={formData.name}
             onChange={handleChange}
-            className="bg-gray-800 border-gray-700 text-white"
+            className="bg-gray-800 border-gray-700 text-orange-500"
           />
           {errors.name && <p className="text-red-500 mt-1 text-sm">{errors.name}</p>}
         </div>
@@ -74,7 +74,7 @@ const ContactForm = () => {
             placeholder="Your email"
             value={formData.email}
             onChange={handleChange}
-            className="bg-gray-800 border-gray-700 text-white"
+            className="bg-gray-800 border-gray-700 text-orange-500"
           />
           {errors.email && <p className="text-red-500 mt-1 text-sm">{errors.email}</p>}
         </div>
@@ -85,7 +85,7 @@ const ContactForm = () => {
             placeholder="Your message"
             value={formData.message}
             onChange={handleChange}
-            className="bg-gray-800 border-gray-700 text-white"
+            className="bg-gray-800 text-orange-500 border-gray-700 "
           />
           {errors.message && <p className="text-red-500 mt-1 text-sm">{errors.message}</p>}
         </div>
@@ -103,7 +103,7 @@ const ContactForm = () => {
       </form>
       {formStatus === "success" && (
         <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-4 text-green-500">
-          Thank you for your message. We'll get back to you soon!
+          Thank you for your message. We&apos;ll get back to you soon!
         </motion.p>
       )}
     </motion.div>

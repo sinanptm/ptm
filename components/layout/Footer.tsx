@@ -2,8 +2,7 @@
 
 import { memo } from "react";
 import Link from "next/link";
-import { Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react';
-import { navLinks, socialLinks } from '@/constants';
+import { contactDetails, navLinks, socialLinks } from '@/constants';
 
 const Footer = () => {
     return (
@@ -38,30 +37,12 @@ const Footer = () => {
                     <div className="space-y-4">
                         <h3 className={`text-orange-500 text-xl`}>Contact Us</h3>
                         <ul className="space-y-3">
-                            <li className="flex items-center gap-2 text-gray-300">
-                                <MapPin className="w-4 h-4 text-orange-500" />
-                                <span className="text-sm">Pavukkandy, Kozhikode, Kerala, India</span>
-                            </li>
-                            <li className="flex items-center gap-2 text-gray-300">
-                                <Phone className="w-4 h-4 text-orange-500" />
-                                <Link
-                                    prefetch={false}
-                                    href="tel:+9186060 97047"
-                                    className="text-sm hover:text-orange-400 transition-colors
-                                  ">
-                                    +91 86060 97047
-                                </Link>
-                            </li>
-                            <li className="flex items-center gap-2 text-gray-300">
-                                <Mail className="w-4 h-4 text-orange-500" />
-                                <Link
-                                    href="mailto:ptmkalaripayattu@gmail.com"
-                                    className="text-sm hover:text-orange-400 transition-colors"
-                                    prefetch={false}
-                                >
-                                    ptmkalaripayattu@gmail.com
-                                </Link>
-                            </li>
+                            {contactDetails.map(el => (
+                                <li key={el.text} className="flex items-center gap-2 text-gray-300">
+                                    {el.icon}
+                                    <span className="text-sm">{el.text}</span>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -85,7 +66,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Copyright */}
+
                 <div className="mt-8 pt-8 border-t border-gray-800">
                     <p className="text-center text-gray-400 text-sm">
                         © {new Date().getFullYear()} PTM Kalari Pavukkandy. All rights reserved.

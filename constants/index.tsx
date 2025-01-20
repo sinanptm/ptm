@@ -1,11 +1,17 @@
 import { BannerImageType, Center, Service } from "@/types";
-import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles, Instagram, Youtube } from "lucide-react";
+import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles, Instagram, Youtube, MapPin, Phone, Mail } from "lucide-react";
 
 export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
+];
+
+export const contactDetails = [
+  { icon: <MapPin className="w-5 h-5 text-orange-500" />, text: "Pavukkandy, Kozhikode, Kerala, India, 673614" },
+  { icon: <Phone className="w-5 h-5 text-orange-500" />, text: "+91 86060 97047" },
+  { icon: <Mail className="w-5 h-5 text-orange-500" />, text: "info@ptmkalari.com" },
 ];
 
 export const socialLinks = [
