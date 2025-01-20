@@ -1,6 +1,6 @@
 import { BannerImageType, Center, Service } from "@/types";
-import { Activity, Leaf, Shield } from "lucide-react";
-import Image from "next/image";
+import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles } from "lucide-react";
+
 
 export const navLinks = [
   { name: 'Home', href: '/' },
@@ -22,6 +22,29 @@ export const bannerImages: BannerImageType[] = [
     name: '/assets/images/banner/banner2.JPG',
     alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
   },
+];
+
+export const features = [
+  {
+    icon: <Swords className="w-6 h-6" />,
+    title: "Combat Techniques",
+    description: "Advanced fighting methods combining strikes, kicks, and weapon mastery"
+  },
+  {
+    icon: <ScrollText className="w-6 h-6" />,
+    title: "Ancient Wisdom",
+    description: "Rooted in Dhanur Veda with over 3000 years of documented history"
+  },
+  {
+    icon: <Globe className="w-6 h-6" />,
+    title: "Global Influence",
+    description: "Influenced development of various martial arts including Karate and Kung Fu"
+  },
+  {
+    icon: <Sparkles className="w-6 h-6" />,
+    title: "Holistic System",
+    description: "Combines physical training with spiritual and mental development"
+  }
 ];
 
 export const services: Service[] = [

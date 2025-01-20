@@ -23,7 +23,7 @@ const HealingPracticesSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
+    <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 py-4'>
       <motion.div 
         className="max-w-7xl mx-auto"
         initial="hidden"
