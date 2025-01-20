@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Ptm Kalarisangam",
     "moidu kurikkal",
   ],
-  authors: [{ name: "sinanptm", url: `${SITE_URL}` }],
+  authors: [{ name: "sinanptm", url: SITE_URL }],
   creator: "PTM Kalari Pavukandy",
   publisher: "PTM Kalari Pavukandy",
   formatDetection: {
@@ -110,8 +110,8 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/manifest.json",
-  category: "technology",
-  classification: "Portfolio Website",
+  category: "Education",
+  classification: "Martial Arts Training",
   metadataBase: new URL(SITE_URL),
   assets: "/assets"
 };
