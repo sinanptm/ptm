@@ -35,13 +35,14 @@ const FounderSection = () => {
               className="relative h-full w-full rounded-2xl overflow-hidden border-2 border-gray-800"
             >
               <Image
-                src="/assets/images/founder.jpg"
+                src="/assets/images/founder1.jpeg"
                 alt="Sri. Moidu Gurukkal - Founder of PTM Kalari"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
               />
+               <div className="absolute inset-0 bg-gradient-to-t from-orange-800/15 to-transparent" />
             </motion.div>
           </div>
         </motion.div>

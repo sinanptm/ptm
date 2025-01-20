@@ -21,17 +21,14 @@ const OurStorySection = () => {
         >
           <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="/assets/images/home-about.jpg"
+              src="/assets/images/about.jpg"
               alt="Kalarippayattu performers demonstrating synchronized movements"
               className="object-cover"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 text-white text-sm">
-              <span className="bg-orange-500/80 px-3 py-1 rounded-full">Est. 1994</span>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-orange-800/15 to-transparent" />
           </div>
         </motion.div>
 

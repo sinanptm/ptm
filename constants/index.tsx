@@ -19,6 +19,10 @@ export const bannerImages: BannerImageType[] = [
     alt: 'Instructor mentoring students in the art of Kalaripayattu, sharing traditional combat skills'
   },
   {
+    name: '/assets/images/banner/banner4.JPG',
+    alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
+  },
+  {
     name: '/assets/images/banner/banner2.JPG',
     alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
   },
