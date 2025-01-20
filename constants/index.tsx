@@ -1,6 +1,8 @@
 import { BannerImageType, Center, Service } from "@/types";
 import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles, Instagram, Youtube, MapPin, Phone, Mail } from "lucide-react";
 
+export const SITE_URL = "https://ptmkalari.vercel.app"
+
 export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
@@ -16,7 +18,7 @@ export const contactDetails = [
 
 export const socialLinks = [
   {
-    href: "https://www.instagram.com/ptm_kalari/",
+    href: "https://www.instagram.com/ptm_kalari",
     label: "Follow us on Instagram",
     Icon: Instagram,
   },

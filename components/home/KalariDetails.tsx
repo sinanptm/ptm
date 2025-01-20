@@ -35,7 +35,7 @@ const KalariDetails = () => {
                     <div className="relative w-full max-w-[300px] md:max-w-[380px]  p-4 rounded-lg">
                         <Image
                             src="/assets/images/founder.jpg"
-                            alt="Founder of PTM Kalari Pavukkandy"
+                            alt="Moidu Gurikkal - Founder of PTM Kalari Pavukkandy"
                             width={500}
                             height={300}
                             className="w-full h-auto object-cover"

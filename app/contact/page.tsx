@@ -1,9 +1,10 @@
-import type { Metadata } from "next"
-import { memo } from "react"
-import ContactHero from "@/components/contact/ContactHero"
-import ContactForm from "@/components/contact/ContactForm"
-import ContactInfo from "@/components/contact/ContactInfo"
-import AllCenters from "@/components/AllCenters"
+import type { Metadata } from "next";
+import { memo } from "react";
+import ContactHero from "@/components/contact/ContactHero";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
+import AllCenters from "@/components/AllCenters";
+import { SITE_URL } from "@/constants";
 
 export const metadata: Metadata = {
   title: "Contact Us | PTM Kalari Pavukandy - Traditional Healing & Martial Arts",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://ptmkalari.vercel.app/contact",
+    url: `${SITE_URL}/contact`,
     siteName: "PTM Kalari Pavukandy",
     title: "Contact PTM Kalari Pavukandy | Traditional Healing & Martial Arts Center",
     description:
@@ -35,9 +36,9 @@ export const metadata: Metadata = {
     site: "@ptmkalari",
   },
   alternates: {
-    canonical: "https://ptmkalari.vercel.app/contact",
+    canonical: `${SITE_URL}/contact`,
   },
-}
+};
 
 const ContactPage = () => {
   return (
@@ -49,8 +50,8 @@ const ContactPage = () => {
       </div>
       <AllCenters />
     </main>
-  )
-}
+  );
+};
 
 export default memo(ContactPage)
 

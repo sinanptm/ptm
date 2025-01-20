@@ -4,6 +4,7 @@ import HealingPracticesSection from '@/components/services/HealingPracticesSecti
 import BenefitsSection from '@/components/services/BenefitsSection';
 import ServicesSection from '@/components/services/ServicesSection';
 import HeroSection from '@/components/services/HeroSection';
+import { SITE_URL } from '@/constants';
 
 export const metadata: Metadata = {
   title: 'Our Services | PTM Kalari Pavukandy - Traditional Healing & Martial Arts',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ptmkalari.vercel.app/services',
+    url: `${SITE_URL}/services`,
     siteName: 'PTM Kalari Pavukandy',
     title: 'Traditional Healing Services & Martial Arts Training | PTM Kalari',
     description: 'Experience authentic Kerala martial arts and healing services at PTM Kalari Pavukandy. Our comprehensive services include Kalarippayattu training, traditional treatments, and holistic wellness programs.',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     site: '@ptmkalari',
   },
   alternates: {
-    canonical: 'https://ptmkalari.vercel.app/services',
+    canonical: `${SITE_URL}/services`,
   },
 };
 

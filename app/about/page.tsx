@@ -6,6 +6,7 @@ import MissionVisionSection from '@/components/about/MissionVisionSection';
 import Founder from '@/components/about/Founder';
 import HistorySection from '@/components/about/HistorySection';
 import AllCenters from '@/components/AllCenters';
+import { SITE_URL } from '@/constants';
 
 export const metadata: Metadata = {
   title: 'About Us | PTM Kalari Pavukandy - Traditional Healing & Martial Arts',
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ptmkalari.vercel.app/about',
+    url:`${SITE_URL}/about`,
     siteName: 'PTM Kalari Pavukandy',
     title: 'About PTM Kalari Pavukandy | Traditional Healing & Martial Arts Center',
     description: 'Discover the rich history and mission of PTM Kalari Pavukandy. Meet our team of expert practitioners dedicated to preserving and sharing traditional healing arts.',
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     site: '@ptmkalari',
   },
   alternates: {
-    canonical: 'https://ptmkalari.vercel.app/about',
+    canonical: `${SITE_URL}/about`,
   },
 };
 

@@ -4,7 +4,7 @@ import { memo } from "react"
 
 const ContactHero = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 py-12">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 py-6">
       <div className="text-center max-w-7xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
