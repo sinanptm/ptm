@@ -1,5 +1,5 @@
 import { BannerImageType, Center, Service } from "@/types";
-import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles, Instagram, Youtube, MapPin, Phone, Mail } from "lucide-react";
+import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles, Instagram, Youtube, MapPin, Phone, Mail, Facebook } from "lucide-react";
 
 export const SITE_URL = "https://ptmkalari.vercel.app"
 
@@ -26,6 +26,11 @@ export const socialLinks = [
     href: "https://www.youtube.com/@PTMKALARI",
     label: "Subscribe to our YouTube channel",
     Icon: Youtube,
+  },
+  {
+    href: "https://www.facebook.com/PTMpavukkandy",
+    label: "Follow us on Facebook",
+    Icon: Facebook,
   },
 ];
 
