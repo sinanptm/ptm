@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import Image from 'next/image';
 import { practices } from '@/constants';
 
@@ -171,4 +171,4 @@ const HealingPracticesSection = () => {
   );
 };
 
-export default HealingPracticesSection;
+export default memo(HealingPracticesSection);
