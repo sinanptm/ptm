@@ -19,4 +19,6 @@ export interface Center {
   description: string
   image: string
   mapUrl: string
+  embedUrl:string
+  instructor:string
 }

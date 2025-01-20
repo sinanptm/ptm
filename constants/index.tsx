@@ -1,12 +1,24 @@
 import { BannerImageType, Center, Service } from "@/types";
-import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles } from "lucide-react";
-
+import { Activity, Leaf, Shield, ScrollText, Swords, Globe, Sparkles, Instagram, Youtube } from "lucide-react";
 
 export const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
+];
+
+export const socialLinks = [
+  {
+    href: "https://www.instagram.com/ptm_kalari/",
+    label: "Follow us on Instagram",
+    Icon: Instagram,
+  },
+  {
+    href: "https://www.youtube.com/@PTMKALARI",
+    label: "Subscribe to our YouTube channel",
+    Icon: Youtube,
+  },
 ];
 
 export const bannerImages: BannerImageType[] = [
@@ -95,39 +107,49 @@ export const services: Service[] = [
 
 export const centers: Center[] = [
   {
-    name: 'PTM Kalari Sangam',
-    location: 'Thiruvananthapuram, Kerala',
+    name: 'PTM Kalari Pavukkandy',
+    instructor:"Dr. Shafeeq",
+    location: 'Pavukkandy, Kozhikode, Kerala',
     description: 'Our main center, offering comprehensive Kalarippayattu training and Ayurvedic treatments.',
-    image: '/assets/images/training1.jpg',
-    mapUrl: 'https://goo.gl/maps/exampleThiruvananthapuram',
+    image: '/assets/images/centers/perambra.jpeg',
+    embedUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.993270895293!2d75.81390344331203!3d11.48041065970418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6646e2f91e813%3A0xf5eec31b323286f2!2sPavukkandy!5e0!3m2!1sen!2sin!4v1737373677928!5m2!1sen!2sin",
+    mapUrl: 'https://maps.app.goo.gl/QFULdZtvQw8UMEGy6',
   },
   {
-    name: 'Kalari Kendram',
+    name: 'PTM Kalari Poonoor',
     location: 'Kochi, Kerala',
-    description: 'A modern facility focusing on traditional Kalari techniques and holistic healing practices.',
-    image: '/assets/images/training2.jpg',
+    description: 'A modern facility focusing on traditional Kalari techniques and Unani ',
+    image: '/assets/images/centers/perambra.jpeg',
     mapUrl: 'https://goo.gl/maps/exampleKochi',
+    embedUrl:"",
+    instructor:"Dr. Salih"
   },
   {
-    name: 'Gurukkal Academy',
+    name: 'PTM Kalari Perambra',
     location: 'Kozhikode, Kerala',
-    description: 'Specializing in advanced Kalarippayattu training and Marma therapy.',
-    image: '/assets/images/unani.webp',
+    description: 'Specializing in advanced Kalarippayattu training and Karate',
+    image: '/assets/images/centers/perambra.jpeg',
     mapUrl: 'https://goo.gl/maps/exampleKozhikode',
+    embedUrl:"",
+    instructor:"Shammer"
   },
   {
-    name: 'Kalari Wellness Center',
+    name: 'PTM Kalari Naduvannur',
     location: 'Bangalore, Karnataka',
     description: 'Bringing the ancient art of Kalarippayattu to urban wellness enthusiasts.',
-    image: '/assets/images/center-bangalore.jpg',
+    image: '/assets/images/centers/perambra.jpeg',
     mapUrl: 'https://goo.gl/maps/exampleBangalore',
+    embedUrl:"",
+    instructor:"Shabeer"
   },
   {
-    name: 'Traditional Kalari Institute',
+    name: 'PTM Kalari Nirmallur',
     location: 'Chennai, Tamil Nadu',
     description: 'Preserving and teaching authentic Kalarippayattu techniques in the heart of Chennai.',
-    image: '/assets/images/center-chennai.jpg',
+    image: '/assets/images/centers/perambra.jpeg',
+    embedUrl:"",
     mapUrl: 'https://goo.gl/maps/exampleChennai',
+    instructor:"Jayakrishnan"
   },
 ];
 

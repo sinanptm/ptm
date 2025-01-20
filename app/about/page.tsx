@@ -5,6 +5,7 @@ import OurStorySection from '@/components/about/OurStorySection';
 import MissionVisionSection from '@/components/about/MissionVisionSection';
 import Founder from '@/components/about/Founder';
 import HistorySection from '@/components/about/HistorySection';
+import AllCenters from '@/components/AllCenters';
 
 export const metadata: Metadata = {
   title: 'About Us | PTM Kalari Pavukandy - Traditional Healing & Martial Arts',
@@ -46,6 +47,7 @@ const AboutPage = () => {
       <Founder />
       <HistorySection />
       <MissionVisionSection />
+      <AllCenters />
     </main>
   );
 };

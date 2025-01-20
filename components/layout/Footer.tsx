@@ -3,7 +3,7 @@
 import { memo } from "react";
 import Link from "next/link";
 import { Instagram, Mail, MapPin, Phone, Youtube } from 'lucide-react';
-import { navLinks } from '@/constants';
+import { navLinks, socialLinks } from '@/constants';
 
 const Footer = () => {
     return (
@@ -68,27 +68,19 @@ const Footer = () => {
                     <div className="space-y-4">
                         <h3 className={`text-orange-500 text-xl`}>Social Links</h3>
                         <div className="flex gap-4">
-                            <Link
-                                href="https://www.instagram.com/ptm_kalari/"
-                                target="_blank"
-                                prefetch={false}
-                                rel="noopener noreferrer"
-                                aria-label="Follow us on Instagram"
-                                className="text-gray-300 hover:text-orange-400 transition-colors"
-                            >
-                                <Instagram className="w-5 h-5" />
-                            </Link>
-                            <Link
-                                href="https://www.youtube.com/@PTMKALARI"
-                                target="_blank"
-                                prefetch={false}
-                                rel="noopener noreferrer"
-                                aria-label="Subscribe to our YouTube channel"
-                                className="text-gray-300 hover:text-orange-400 transition-colors"
-                            >
-                                <Youtube className="w-5 h-5" />
-                            </Link>
-
+                            {socialLinks.map(({ href, label, Icon }, index) => (
+                                <Link
+                                    key={index}
+                                    href={href}
+                                    target="_blank"
+                                    prefetch={false}
+                                    rel="noopener noreferrer"
+                                    aria-label={label}
+                                    className="text-gray-300 hover:text-orange-400 transition-colors"
+                                >
+                                    <Icon className="w-5 h-5" />
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>
