@@ -12,7 +12,7 @@ const AboutUs = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
 
                 <div className="order-2 md:order-1 flex justify-center items-center">
-                    <div className="relative w-full max-w-[300px]">
+                    <div className="relative w-full ">
                         <Image
                             src="/assets/images/home-about.jpg"
                             alt="Kalarippayattu performers demonstrating synchronized movements"
