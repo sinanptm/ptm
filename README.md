@@ -9,6 +9,7 @@
 </div>
 
 ![image](https://github.com/user-attachments/assets/7424f164-9788-4cf1-87ee-0f496a5862a0)
+<a href="https://pagespeed.web.dev/analysis/https-ptmkalari-vercel-app/gi9hufp09o?hl=en_GB&form_factor=desktop">Lighthouse Performance Report</a>
 
 
 ## 🌟 Key Features
