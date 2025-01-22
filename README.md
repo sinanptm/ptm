@@ -26,7 +26,7 @@
 - 🎯 **Core Web Vitals** - Exceeds all thresholds
   - LCP: < 2.5s
   - FID: < 100ms
-  - CLS: < 0.1
+  - FCP: < 1.2s
 
 ### Technical Excellence
 - 🎯 **Type Safety** - Full TypeScript implementation
