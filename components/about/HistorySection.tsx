@@ -1,10 +1,9 @@
 'use client'
-import { features } from '@/constants';
+import { courseTimeLine, features } from '@/constants';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
 
 const HistorySection = () => {
-
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <motion.div
@@ -78,26 +77,7 @@ const HistorySection = () => {
           <div className="bg-gradient-to-br from-gray-900 to-gray-900/50 rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-6">Training System</h3>
             <div className="space-y-6">
-              {[{
-                  title: "Meipayathari",
-                  description: "The foundation of Kalarippayattu training, focusing on physical conditioning, body control, and the seamless flow of movements to develop strength, flexibility, and stamina.",
-                },
-                {
-                  title: "Kolthari",
-                  description: "Mastery of wooden weaponry, emphasizing precision, coordination, and the understanding of combat distance and timing.",
-                },
-                {
-                  title: "Ankathari",
-                  description: "Advanced training with metal weapons such as swords and shields, enhancing agility, reflexes, and combat techniques.",
-                },
-                {
-                  title: "Verumkai",
-                  description: "Training in unarmed combat, focusing on self-defense, strike techniques, and the art of Marma, targeting vital points.",
-                },
-                {
-                  title: "Kalari Marma Chikilsa",
-                  description: "The healing aspect of Kalarippayattu, utilizing traditional massage and therapeutic techniques to rejuvenate the body and mind.",
-                }].map((stage, index) => (
+              {courseTimeLine.map((stage, index) => (
                 <motion.div
                   key={stage.title}
                   initial={{ opacity: 0, x: 20 }}

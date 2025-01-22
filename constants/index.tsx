@@ -10,6 +10,27 @@ export const navLinks = [
   { name: 'Contact', href: '/contact' },
 ];
 
+export const courseTimeLine = [{
+  title: "Meipayathari",
+  description: "The foundation of Kalarippayattu training, focusing on physical conditioning, body control, and the seamless flow of movements to develop strength, flexibility, and stamina.",
+},
+{
+  title: "Kolthari",
+  description: "Mastery of wooden weaponry, emphasizing precision, coordination, and the understanding of combat distance and timing.",
+},
+{
+  title: "Ankathari",
+  description: "Advanced training with metal weapons such as swords and shields, enhancing agility, reflexes, and combat techniques.",
+},
+{
+  title: "Verumkai",
+  description: "Training in unarmed combat, focusing on self-defense, strike techniques, and the art of Marma, targeting vital points.",
+},
+{
+  title: "Kalari Marma Chikilsa",
+  description: "The healing aspect of Kalarippayattu, utilizing traditional massage and therapeutic techniques to rejuvenate the body and mind.",
+}]
+
 export const contactDetails = [
   { icon: <MapPin className="w-5 h-5 text-orange-500" />, text: "Pavukkandy, Kozhikode, Kerala, India, 673614" },
   { icon: <Phone className="w-5 h-5 text-orange-500" />, text: "+91 86060 97047" },
@@ -232,3 +253,24 @@ export const practices = [
     details: "Every treatment plan is uniquely crafted to address your specific health concerns and goals."
   }
 ];
+
+
+export const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.3,
+    },
+  },
+};
+
+export const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  },
+};

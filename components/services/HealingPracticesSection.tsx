@@ -2,25 +2,10 @@
 import { motion } from 'framer-motion';
 import { memo, useState } from 'react';
 import Image from 'next/image';
-import { practices } from '@/constants';
+import { containerVariants, itemVariants, practices } from '@/constants';
 
 const HealingPracticesSection = () => {
   const [activeCard, setActiveCard] = useState(0);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
-  };
 
   return (
     <section className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 py-4'>
