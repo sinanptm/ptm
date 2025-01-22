@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { memo, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { submitMessage } from "@/action"
+import { motion } from "framer-motion";
+import { memo, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { submitMessage } from "@/action";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -13,15 +13,15 @@ const ContactForm = () => {
     email: "",
     phone: "",
     message: "",
-  })
+  });
   const [errors, setErrors] = useState({
     name: "",
     email: "",
     phone: "",
     message: "",
-    contact: "", 
-  })
-  const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
+    contact: "",
+  });
+  const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
   const validateForm = () => {
     const newErrors = {
@@ -29,27 +29,31 @@ const ContactForm = () => {
       email: formData.email ? (/\S+@\S+\.\S+/.test(formData.email) ? "" : "Please enter a valid email address.") : "",
       phone: formData.phone ? (/^\+?[1-9]\d{1,14}$/.test(formData.phone) ? "" : "Please enter a valid phone number.") : "",
       message: formData.message.length >= 10 ? "" : "Message must be at least 10 characters.",
-      contact: formData.email || formData.phone ? "" : "Please provide at least an email or phone number.", 
-    }
-    setErrors(newErrors)
-    return !Object.values(newErrors).some((error) => error !== "")
-  }
+      contact: formData.email || formData.phone ? "" : "Please provide at least an email or phone number.",
+    };
+    setErrors(newErrors);
+    return !Object.values(newErrors).some((error) => error !== "");
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-    setErrors((prev) => ({ ...prev, [name]: "" }))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    setErrors((prev) => ({ ...prev, [name]: "" }));
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    if (!validateForm()) return
+    try {
+      e.preventDefault();
+      if (!validateForm()) return;
 
-    setFormStatus("submitting")
-    await submitMessage(formData.name, formData.email, +formData.phone, formData.message)
-    setFormStatus("success")
-    setFormData({ name: "", email: "", phone: "", message: "" }) 
-  }
+      setFormStatus("submitting");
+      await submitMessage(formData.name, formData.email, formData.phone, formData.message);
+      setFormStatus("success");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <motion.div
@@ -110,9 +114,8 @@ const ContactForm = () => {
         <Button
           type="submit"
           disabled={formStatus === "submitting"}
-          className={`w-full ${
-            formStatus === "submitting" ? "bg-gray-500 text-gray-200" : "bg-orange-700 text-white hover:bg-orange-800"
-          } transition-colors duration-300`}
+          className={`w-full ${formStatus === "submitting" ? "bg-gray-500 text-gray-200" : "bg-orange-700 text-white hover:bg-orange-800"
+            } transition-colors duration-300`}
         >
           {formStatus === "submitting" ? "Sending..." : "Send Message"}
         </Button>
@@ -123,7 +126,7 @@ const ContactForm = () => {
         </motion.p>
       )}
     </motion.div>
-  )
-}
+  );
+};
 
-export default memo(ContactForm)
+export default memo(ContactForm);
