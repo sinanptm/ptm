@@ -1,11 +1,11 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import React, { useCallback, useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useState, useRef, FC } from "react";
 import Image from "next/image";
 import { ImagesSliderProps } from "@/types/props";
 
-export const ImagesSlider: React.FC<ImagesSliderProps> = ({
+export const ImagesSlider: FC<ImagesSliderProps> = ({
   images,
   children,
   overlay = true,
@@ -175,6 +175,7 @@ export const ImagesSlider: React.FC<ImagesSliderProps> = ({
               alt={images[currentIndex].alt}
               fill
               priority
+              loading="eager"
               className="object-cover object-center"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
             />
