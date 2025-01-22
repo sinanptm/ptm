@@ -13,7 +13,6 @@ const LogoIcon = ({ isAnimated = true, width = '64px', className }: LogoIconProp
         hover: { scale: 1.1, transition: { duration: 0.2, ease: 'easeInOut' } },
     };
 
-
     const ImageComponent = (
         <Image
             loading="eager"

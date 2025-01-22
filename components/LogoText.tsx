@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
 import { memo } from 'react';
+
 const LogoText = () => {
     return (
         <motion.h1 whileHover={{ scale: 1.1 }}>
