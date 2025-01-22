@@ -1,11 +1,11 @@
 'use client';
 
 import { memo, useState, useCallback, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import ServiceCard from './ServiceCard';
 import { services } from '@/constants';
 
-const ServicesList = ({ hasButton = true }: { hasButton?: boolean; }) => {
+const ServicesList = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const nextService = useCallback(() => {
@@ -29,8 +29,24 @@ const ServicesList = ({ hasButton = true }: { hasButton?: boolean; }) => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [nextService, prevService]);
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
+
   return (
-    <div className="container mx-auto px-4">
+    <motion.div
+      className="container mx-auto px-4"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -39,35 +55,33 @@ const ServicesList = ({ hasButton = true }: { hasButton?: boolean; }) => {
       >
         Holistic Healing Practices
       </motion.h2>
-      <div className="relative" aria-roledescription="carousel" aria-label="Holistic Healing Practices">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={service.name}
-              service={service}
-              hasButton={hasButton}
-              isActive={index === activeIndex}
-              onClick={() => setActiveIndex(index)}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="flex justify-center mt-6 space-x-2" role="tablist">
-        {services.map((service, index) => (
-          <button
-            key={index}
-            onClick={() => setActiveIndex(index)}
-            className={`w-3 h-3 hidden rounded-full sm:block ${index === activeIndex ? 'bg-orange-500' : 'bg-gray-400'
-              }`}
-            role="tab"
-            aria-selected={index === activeIndex}
-            aria-label={`Select ${service.name}`}
-          />
-        ))}
-      </div>
-    </div>
+      <motion.div
+        className="relative"
+        aria-roledescription="carousel"
+        aria-label="Holistic Healing Practices"
+        variants={containerVariants}
+      >
+        <AnimatePresence>
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {services.map((service, index) => (
+              <ServiceCard
+                key={service.name}
+                service={service}
+                isActive={index === activeIndex}
+                onClick={() => setActiveIndex(index)}
+                hasButton
+              />
+            ))}
+          </motion.div>
+        </AnimatePresence>
+      </motion.div>
+    </motion.div>
   );
 };
 
-export default memo(ServicesList)
-
+export default memo(ServicesList);
