@@ -5,8 +5,9 @@ import KalariTraining from "@/components/home/KalariTraining";
 import Centers from "@/components/home/Centers";
 import ServicesList from "@/components/ServicesList";
 import HomeSectionWrapper from "@/components/hoc/HomeSectionWrapper";
+import { memo } from "react";
 
-const Page = () => {
+const HomePage = () => {
   return (
     <main className="min-h-screen">
       <ImageSlider />
@@ -21,4 +22,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default memo(HomePage);
