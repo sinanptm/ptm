@@ -59,7 +59,7 @@ const Centers = () => {
               }}
               plugins={[
                 Autoplay({
-                  delay: 3000,
+                  delay: 4000,
                   stopOnInteraction: false,
                   stopOnMouseEnter: true
                 })

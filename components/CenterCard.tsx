@@ -1,12 +1,12 @@
-import { memo } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { MapPin } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import type { Center } from "@/types"
+import { memo } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { MapPin, Phone } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import type { Center } from "@/types";
 
-const CenterCard = ({ center, showContactButton = true }: { center: Center; showContactButton?: boolean }) => (
+const CenterCard = ({ center, showContactButton = true }: { center: Center; showContactButton?: boolean; }) => (
   <Card className="bg-gray-800 border-gray-700 overflow-hidden hover:border-orange-500 transition-colors duration-300">
     <CardContent className="p-0">
       <div className="relative h-48 min-h-[200px] md:h-64">
@@ -39,9 +39,14 @@ const CenterCard = ({ center, showContactButton = true }: { center: Center; show
             </Link>
           </Button>
           {showContactButton && (
-            <Button asChild>
-              <Link href="/contact" prefetch={false}>
-                Contact Us
+            <Button variant="link" asChild className="text-orange-500 hover:text-orange-400">
+              <Link
+                prefetch={false}
+                href={`tel:${center.phone}`}
+                className="flex items-center"
+              >
+                <Phone size={14} className="mr-1" />
+                {center.instructor}: {center.phone}
               </Link>
             </Button>
           )}
@@ -49,7 +54,6 @@ const CenterCard = ({ center, showContactButton = true }: { center: Center; show
       </div>
     </CardContent>
   </Card>
-)
+);
 
-export default memo(CenterCard)
-
+export default memo(CenterCard);
