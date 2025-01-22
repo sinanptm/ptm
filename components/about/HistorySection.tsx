@@ -78,24 +78,26 @@ const HistorySection = () => {
           <div className="bg-gradient-to-br from-gray-900 to-gray-900/50 rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-6">Training System</h3>
             <div className="space-y-6">
-              {[
-                {
-                  title: "Meipayattu",
-                  description: "Physical conditioning and body control exercises",
+              {[{
+                  title: "Meipayathari",
+                  description: "The foundation of Kalarippayattu training, focusing on physical conditioning, body control, and the seamless flow of movements to develop strength, flexibility, and stamina.",
                 },
                 {
                   title: "Kolthari",
-                  description: "Training with wooden weapons for coordination",
+                  description: "Mastery of wooden weaponry, emphasizing precision, coordination, and the understanding of combat distance and timing.",
                 },
                 {
                   title: "Ankathari",
-                  description: "Advanced training with metal weapons",
+                  description: "Advanced training with metal weapons such as swords and shields, enhancing agility, reflexes, and combat techniques.",
                 },
                 {
                   title: "Verumkai",
-                  description: "Empty-hand combat techniques and applications",
-                }
-              ].map((stage, index) => (
+                  description: "Training in unarmed combat, focusing on self-defense, strike techniques, and the art of Marma, targeting vital points.",
+                },
+                {
+                  title: "Kalari Marma Chikilsa",
+                  description: "The healing aspect of Kalarippayattu, utilizing traditional massage and therapeutic techniques to rejuvenate the body and mind.",
+                }].map((stage, index) => (
                 <motion.div
                   key={stage.title}
                   initial={{ opacity: 0, x: 20 }}
