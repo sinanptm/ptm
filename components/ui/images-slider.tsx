@@ -1,11 +1,11 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import { useCallback, useEffect, useState, useRef, FC } from "react";
+import { useCallback, useEffect, useState, useRef, FC, memo } from "react";
 import Image from "next/image";
 import { ImagesSliderProps } from "@/types/props";
 
-export const ImagesSlider: FC<ImagesSliderProps> = ({
+const ImagesSlider: FC<ImagesSliderProps> = ({
   images,
   children,
   overlay = true,
@@ -32,35 +32,29 @@ export const ImagesSlider: FC<ImagesSliderProps> = ({
 
   const preloadAdjacentImages = useCallback(() => {
     if (images.length <= 1) return;
-    
+
     const nextIndex = (currentIndex + 1) % images.length;
     const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-    
+
     preloadImage(images[nextIndex].name);
     preloadImage(images[prevIndex].name);
   }, [currentIndex, images, preloadImage]);
 
   const handleNext = useCallback(() => {
     if (images.length <= 1) return;
-    
-    setCurrentIndex((prevIndex) => {
-      const newIndex = prevIndex + 1 === images.length ? 0 : prevIndex + 1;
-      return newIndex;
-    });
+
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   }, [images.length]);
 
   const handlePrevious = useCallback(() => {
     if (images.length <= 1) return;
-    
-    setCurrentIndex((prevIndex) => {
-      const newIndex = prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1;
-      return newIndex;
-    });
+
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   }, [images.length]);
 
   useEffect(() => {
     if (!images.length) return;
-    
+
     const currentImage = images[currentIndex].name;
     preloadImage(currentImage);
     preloadAdjacentImages();
@@ -174,6 +168,8 @@ export const ImagesSlider: FC<ImagesSliderProps> = ({
               src={images[currentIndex].name}
               alt={images[currentIndex].alt}
               fill
+              placeholder="blur"
+              blurDataURL={images[currentIndex].placeholder || ""}
               priority
               loading="eager"
               className="object-cover object-center"
@@ -185,3 +181,6 @@ export const ImagesSlider: FC<ImagesSliderProps> = ({
     </section>
   );
 };
+
+
+export default memo(ImagesSlider)

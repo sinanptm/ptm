@@ -2,7 +2,7 @@
 'use client';
 
 import LogoIcon from "@/components/LogoIcon";
-import { ImagesSlider } from "@/components/ui/images-slider";
+import ImagesSlider from "@/components/ui/images-slider";
 import { bannerImages } from "@/constants";
 import { motion } from "framer-motion";
 import Link from "next/link";
