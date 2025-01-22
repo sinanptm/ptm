@@ -168,7 +168,7 @@ export const centers: Center[] = [
     mapUrl: 'https://maps.app.goo.gl/prqusiDTWbMmp2MT7',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7821.242870869617!2d75.89837191427925!3d11.43499910483884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba668a13022f997%3A0xacfe4f6358b83a41!2sPoonoor%2C%20Kerala%20673574!5e0!3m2!1sen!2sin!4v1737443240227!5m2!1sen!2sin",
     instructor: "Dr. Salih",
-    phone: "8921018167"
+    phone: "+91 8921018167"
   },
   {
     name: 'PTM Kalari Perambra',
