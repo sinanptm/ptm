@@ -57,19 +57,19 @@ export const socialLinks = [
 
 export const bannerImages: BannerImageType[] = [
   {
-    name: '/assets/images/banners/banner1.jpg',
+    name: '/assets/images/banners/banner1.webp',
     alt: 'Kalaripayattu practitioner demonstrating knife techniques with precise hand movements'
   },
   {
-    name: '/assets/images/banners/banner3.jpg',
+    name: '/assets/images/banners/banner3.webp',
     alt: 'Instructor mentoring students in the art of Kalaripayattu, sharing traditional combat skills'
   },
   {
-    name: '/assets/images/banners/banner4.jpg',
+    name: '/assets/images/banners/banner4.webp',
     alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
   },
   {
-    name: '/assets/images/banners/banner2.jpg',
+    name: '/assets/images/banners/banner2.webp',
     alt: 'Two Kalaripayattu fighters engaging in a dynamic duel using swords and shields'
   },
 ];
