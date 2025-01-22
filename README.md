@@ -8,6 +8,9 @@
   [![Performance](https://img.shields.io/badge/Lighthouse-97%25-brightgreen?style=for-the-badge&logo=lighthouse)](https://ptmkalari.vercel.app)
 </div>
 
+![image](https://github.com/user-attachments/assets/7424f164-9788-4cf1-87ee-0f496a5862a0)
+
+
 ## 🌟 Key Features
 
 ### Progressive Web App
