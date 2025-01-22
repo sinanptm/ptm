@@ -5,7 +5,6 @@ import OurStorySection from '@/components/about/OurStorySection';
 import MissionVisionSection from '@/components/about/MissionVisionSection';
 import Founder from '@/components/about/Founder';
 import HistorySection from '@/components/about/HistorySection';
-import AllCenters from '@/components/AllCenters';
 import { SITE_URL } from '@/constants';
 
 export const metadata: Metadata = {
@@ -48,7 +47,6 @@ const AboutPage = () => {
       <Founder />
       <HistorySection />
       <MissionVisionSection />
-      <AllCenters />
     </main>
   );
 };

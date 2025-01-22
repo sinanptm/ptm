@@ -6,6 +6,7 @@ import Centers from "@/components/home/Centers";
 import ServicesList from "@/components/ServicesList";
 import HomeSectionWrapper from "@/components/hoc/HomeSectionWrapper";
 import { memo } from "react";
+import ResearchCenter from "@/components/home/ResearchCenter";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <KalariDetails />
       <AboutUs />
       <KalariTraining />
+      <ResearchCenter />
       <HomeSectionWrapper>
         <ServicesList />
       </HomeSectionWrapper>

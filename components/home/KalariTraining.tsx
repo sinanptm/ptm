@@ -1,9 +1,9 @@
 'use client';
 
+import HomeSectionWrapper from '@/components/hoc/HomeSectionWrapper';
 import { memo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import HomeSectionWrapper from '@/components/hoc/HomeSectionWrapper';
 
 const KalariTraining = () => {
   return (
@@ -47,14 +47,13 @@ const KalariTraining = () => {
         </div>
 
         <div className="flex justify-center items-center">
-          <div className="relative w-full max-w-[500px]">
+          <div className="relative w-full aspect-video md:aspect-square lg:aspect-video">
             <Image
               src="/assets/images/training2.jpg"
-              alt="Traditional Kalari weapons display with oil lamps and marigold flowers"
-              width={500}
-              height={300}
-              className="w-full h-auto object-cover "
-              priority
+              alt="AVM Ayurvedic Pharmacy & Research Center"
+              fill
+              className="object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>

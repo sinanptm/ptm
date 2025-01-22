@@ -5,20 +5,21 @@ export interface BannerImageType {
 
 
 export interface Service {
-  name: string
-  description: string
-  image: string
-  color: string
-  title:string
-  details:string[]
+  name: string;
+  description: string;
+  image: string;
+  color: string;
+  title: string;
+  details: string[];
 }
 
 export interface Center {
-  name: string
-  location: string
-  description: string
-  image: string
-  mapUrl: string
-  embedUrl:string
-  instructor:string
+  name: string;
+  location: string;
+  description: string;
+  image: string;
+  mapUrl: string;
+  embedUrl: string;
+  instructor: string;
+  phone: string;
 }

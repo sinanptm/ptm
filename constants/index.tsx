@@ -127,7 +127,18 @@ export const centers: Center[] = [
     image: '/assets/images/centers/pavukkandy.jpeg',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.993270895293!2d75.81390344331203!3d11.48041065970418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6646e2f91e813%3A0xf5eec31b323286f2!2sPavukkandy!5e0!3m2!1sen!2sin!4v1737373677928!5m2!1sen!2sin",
     mapUrl: 'https://maps.app.goo.gl/QFULdZtvQw8UMEGy6',
+    phone: "+91 86060 97047"
   },
+  {
+    name: 'AVM Pharmacy and Research Center',
+    instructor: 'Dr. Hakeem',
+    location: 'Chelannur, Kozhikode, Kerala',
+    description: 'A center combining traditional medicine with modern research, offering Ayurvedic treatments and wellness programs under Dr. Hakeem’s guidance.',
+    image: '/assets/images/centers/avm.jpeg',
+    embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.8671171479036!2d75.79573791124224!3d11.344415248412513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65e0faa44289d%3A0xf35a6458bc072465!2sAVM%20Hospital!5e0!3m2!1sen!2sin!4v1737531890696!5m2!1sen!2sin',
+    mapUrl: 'https://maps.app.goo.gl/ZrwnbTc3bEr9Ag7u8',
+    phone: '+91 85890053355'
+  },  
   {
     name: 'PTM Kalari Poonoor',
     location: 'Poonoor, Kozhikode, Kerala',
@@ -135,7 +146,8 @@ export const centers: Center[] = [
     image: '/assets/images/centers/poonor.jpeg',
     mapUrl: 'https://maps.app.goo.gl/prqusiDTWbMmp2MT7',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7821.242870869617!2d75.89837191427925!3d11.43499910483884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba668a13022f997%3A0xacfe4f6358b83a41!2sPoonoor%2C%20Kerala%20673574!5e0!3m2!1sen!2sin!4v1737443240227!5m2!1sen!2sin",
-    instructor: "Dr. Salih"
+    instructor: "Dr. Salih",
+    phone: "8921018167"
   },
   {
     name: 'PTM Kalari Perambra',
@@ -144,7 +156,8 @@ export const centers: Center[] = [
     image: '/assets/images/centers/perambra.jpeg',
     mapUrl: 'https://maps.app.goo.gl/6qXp4St5BBzgHRBD7',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15635.424502570057!2d75.7520742474094!3d11.56217006745512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba67c7969e2a065%3A0x2d60bd2ae30b114a!2sPerambra%2C%20Kerala%20673525!5e0!3m2!1sen!2sin!4v1737443784306!5m2!1sen!2sin",
-    instructor: "Shammer"
+    instructor: "Shammer",
+    phone: "+91 98464 14293"
   },
   {
     name: 'PTM Kalari Naduvannur',
@@ -152,8 +165,9 @@ export const centers: Center[] = [
     description: 'A tranquil center bringing the ancient art of Kalarippayattu to urban wellness enthusiasts, offering a unique blend of tradition and modernity.',
     image: '/assets/images/centers/perambra.jpeg',
     mapUrl: 'https://maps.app.goo.gl/vCE8WFV1RyLcHDiQA',
-    embedUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7819.8385084862!2d75.7636695412761!3d11.48574983874423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba663aea43f3473%3A0x6fa0e6f3eadb57c0!2sNaduvannur%2C%20Kerala%20673614!5e0!3m2!1sen!2sin!4v1737443399964!5m2!1sen!2sin",
-    instructor: "Shabeer"
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7819.8385084862!2d75.7636695412761!3d11.48574983874423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba663aea43f3473%3A0x6fa0e6f3eadb57c0!2sNaduvannur%2C%20Kerala%20673614!5e0!3m2!1sen!2sin!4v1737443399964!5m2!1sen!2sin",
+    instructor: "Shabeer",
+    phone: "+91 95269 77132"
   },
   {
     name: 'PTM Kalari Nirmallur',
@@ -162,7 +176,8 @@ export const centers: Center[] = [
     image: '/assets/images/centers/nirmallur.jpeg',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.212194959348!2d75.81974929999998!3d11.464604249999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba66411a3bc6903%3A0x3c30f18ac986b083!2sNirmallur%2C%20Panangad%2C%20Kerala%20673612!5e0!3m2!1sen!2sin!4v1737442598454!5m2!1sen!2sin",
     mapUrl: 'https://maps.app.goo.gl/ugXknd1HJH3PYhYK7',
-    instructor: "Jayakrishnan"
+    instructor: "Jayakrishnan",
+    phone: "+91 9847037931"
   },
 ];
 

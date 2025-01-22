@@ -3,7 +3,7 @@
 import { memo, useState, useCallback, useEffect } from 'react';
 import { Card } from "@/components/ui/card";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, ExternalLink } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { centers } from '@/constants';
 import { Center } from '@/types';
 import Link from 'next/link';
@@ -73,19 +73,16 @@ const AllCenters = () => {
                     <p className="text-sm text-gray-400 line-clamp-2 group-hover:text-gray-300 transition-colors duration-300">
                       {center.description}
                     </p>
-                    <p className="text-sm text-orange-400">
+                    <p className="text-sm  text-orange-500 transition-colors duration-300">
                       <span className="font-bold text-gray-300">Instructor:</span> {center.instructor} Gurukkal
                     </p>
                     <Link
                       prefetch={false}
-                      href={center.mapUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={`tel:${center.phone}`}
+                      className="text-sm hover:text-gray-400 text-orange-500 transition-colors duration-300"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center space-x-2 underline text-gray-400 hover:text-gray-200"
                     >
-                      <span>Open in Google Maps</span>
-                      <ExternalLink size={14} />
+                      <span className="font-bold text-gray-300">Phone:</span> {center.phone}
                     </Link>
                   </div>
 
