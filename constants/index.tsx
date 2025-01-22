@@ -124,7 +124,7 @@ export const centers: Center[] = [
     instructor: "Dr. Shafeeq",
     location: 'Pavukkandy, Kozhikode, Kerala',
     description: 'The flagship center offering a perfect blend of traditional Kalarippayattu training and holistic Ayurvedic treatments in a serene environment.',
-    image: '/assets/images/centers/perambra.jpeg',
+    image: '/assets/images/centers/pavukkandy.jpeg',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.993270895293!2d75.81390344331203!3d11.48041065970418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6646e2f91e813%3A0xf5eec31b323286f2!2sPavukkandy!5e0!3m2!1sen!2sin!4v1737373677928!5m2!1sen!2sin",
     mapUrl: 'https://maps.app.goo.gl/QFULdZtvQw8UMEGy6',
   },
