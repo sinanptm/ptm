@@ -1,7 +1,7 @@
 import { memo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { Center } from "@/types";
@@ -43,9 +43,8 @@ const CenterCard = ({ center, showContactButton = true }: { center: Center; show
               <Link
                 prefetch={false}
                 href={`tel:${center.phone}`}
-                className="flex items-center"
+                className="flex items-center text-xs sm:text-sm"
               >
-                <Phone size={14} className="mr-1" />
                 {center.instructor}: {center.phone}
               </Link>
             </Button>

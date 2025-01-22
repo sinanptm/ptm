@@ -9,6 +9,11 @@
     "lint": "next lint",
     "postbuild": "next-sitemap"
   },
+  "author": {
+    "name": "Muhammed sian",
+    "url": "https://sinanptm.vercel.app"
+  },
+  "homepage": "https://ptmkalari.vercel.app",
   "packageManager": "pnpm",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.4",
@@ -20,7 +25,7 @@
     "embla-carousel-react": "^8.5.2",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.468.0",
-    "next": ">=15.1.2",
+    "next": "^15.1.6",
     "nodemailer": "^6.9.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
