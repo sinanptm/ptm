@@ -14,6 +14,7 @@ const CenterCard = ({ center, showContactButton = true }: { center: Center; show
           src={center.image || "/placeholder.svg"}
           alt={center.name}
           fill
+          loading="lazy"
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
