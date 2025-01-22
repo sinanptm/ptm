@@ -37,7 +37,7 @@ const KalariTraining = () => {
             </p>
             <p className="text-gray-300 leading-relaxed">
               Through Kalari, practitioners achieve
-              <span className="text-white font-semibold"> "A Sound Mind in a Sound Body"</span>,
+              <span className="text-white font-semibold"> &quot;A Sound Mind in a Sound Body&quot;</span>,
               becoming healers and warriors of unparalleled skill and balance.
             </p>
           </motion.div>
