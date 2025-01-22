@@ -33,7 +33,7 @@ const ResearchCenter = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/assets/images/centers/avm2.jpeg"
+              src="/assets/images/centers/avm2.jpg"
               alt="AVM Ayurvedic Pharmacy & Research Center"
               fill
               className="object-cover rounded-lg"
