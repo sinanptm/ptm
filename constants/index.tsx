@@ -188,7 +188,7 @@ export const centers: Center[] = [
     name: 'PTM Kalari Naduvannur',
     location: 'Naduvannur, Kozhikode, Kerala',
     description: 'A tranquil center bringing the ancient art of Kalarippayattu to urban wellness enthusiasts, offering a unique blend of tradition and modernity.',
-    image: '/assets/images/centers/perambra.jpg',
+    image: '/assets/images/centers/naduvannur.jpg',
     mapUrl: 'https://maps.app.goo.gl/vCE8WFV1RyLcHDiQA',
     embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7819.8385084862!2d75.7636695412761!3d11.48574983874423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba663aea43f3473%3A0x6fa0e6f3eadb57c0!2sNaduvannur%2C%20Kerala%20673614!5e0!3m2!1sen!2sin!4v1737443399964!5m2!1sen!2sin",
     instructor: "Shabeer",
