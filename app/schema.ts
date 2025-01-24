@@ -49,21 +49,3 @@ export const websiteSchema = {
     }
 };
 
-export const courseSchema = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    name: "Traditional Kalarippayattu Training",
-    description: "Comprehensive training in the ancient martial art of Kalarippayattu",
-    provider: {
-        "@id": `${SITE_URL}#organization`
-    },
-    educationalLevel: "Beginner to Advanced",
-    coursePrerequisites: "No prior experience required",
-    teaches: [
-        "Traditional Kalarippayattu techniques",
-        "Combat skills",
-        "Body conditioning",
-        "Meditation",
-        "Traditional weapons training"
-    ]
-};

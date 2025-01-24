@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import NavBar from "@/components/layout/NavBar";
 import { bebas, russoOne } from "./fonts";
 import Footer from "@/components/layout/Footer";
-import { courseSchema, organizationSchema, websiteSchema } from "./schema";
+import { organizationSchema, websiteSchema } from "./schema";
 
 
 const RootLayout = ({ children }: RootLayoutProps) => {
@@ -23,8 +23,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
               "@context": "https://schema.org",
               "@graph": [
                 organizationSchema,
-                websiteSchema,
-                courseSchema
+                websiteSchema
               ]
             })
           }}
