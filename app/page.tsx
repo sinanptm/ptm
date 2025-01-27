@@ -1,12 +1,12 @@
-import AboutUs from "@/components/home/AboutUs";
+import HomeSectionWrapper from "@/components/hoc/HomeSectionWrapper";
+import ResearchCenter from "@/components/home/ResearchCenter";
+import KalariTraining from "@/components/home/KalariTraining";
 import KalariDetails from "@/components/home/KalariDetails";
 import ImageSlider from "@/components/home/ImageSlider";
-import KalariTraining from "@/components/home/KalariTraining";
-import Centers from "@/components/home/Centers";
 import ServicesList from "@/components/ServicesList";
-import HomeSectionWrapper from "@/components/hoc/HomeSectionWrapper";
+import AboutUs from "@/components/home/AboutUs";
+import Centers from "@/components/home/Centers";
 import { memo } from "react";
-import ResearchCenter from "@/components/home/ResearchCenter";
 
 const HomePage = () => {
   return (

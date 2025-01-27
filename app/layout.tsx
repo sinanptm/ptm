@@ -1,12 +1,11 @@
-import { RootLayoutProps } from "@/types/props";
-import { metadata } from "./metadata";
-import "@/styles/globals.css";
+import { centerSchemas, organizationSchema, websiteSchema } from "./schema";
 import { Analytics } from "@vercel/analytics/react";
+import Footer from "@/components/layout/Footer";
+import { RootLayoutProps } from "@/types/props";
 import NavBar from "@/components/layout/NavBar";
 import { bebas, russoOne } from "./fonts";
-import Footer from "@/components/layout/Footer";
-import { organizationSchema, websiteSchema } from "./schema";
-
+import { metadata } from "./metadata";
+import "@/styles/globals.css";
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
@@ -23,7 +22,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
               "@context": "https://schema.org",
               "@graph": [
                 organizationSchema,
-                websiteSchema
+                websiteSchema,
+                centerSchemas
               ]
             })
           }}
